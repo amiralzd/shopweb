@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="assets/carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/carousel/owl.theme.default.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body id="body">
+
+    <header class="w-full h-[80px] flex justify-center items-center border-b-[1px] border-solid border-[#efefef] z-[10] absolute top-0 max-sm:h-[65px] max-sm:pl-[15px] max-sm:pr-[15px]">
+      <div class="w-[90%] h-full flex max-sm:w-full">
+        <div class="w-[13.1%] h-full mr-[50px] flex justify-center items-center max-sm:w-[180px] max-sm:h-[85px] max-sm:mr-0"><a href=""><img class="max-sm:w-full max-sm:h-full" src="assets/img/logo.svg" alt=""></a></div>
+        <div class="w-[52.8%] h-full flex max-sm:hidden">
+          <a class="w-[12.5%] h-full font-medium flex justify-center items-center gap-[5px] homeMenu" href="">Home <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
+          <div class="w-[820px] h-[397.6px] bg-yellow-300 absolute top-[80px] hidden home-dropdown"></div>
+
+          <a class="w-[86.2px] h-full flex justify-center items-center font-medium gap-[5px] shopMenu" href="">Shop <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
+          <div class="w-[1140px] h-[397.6px] bg-lime-400 absolute top-[80px] left-[90px] hidden shop-dropdown"></div>
+
+          <a class="w-[80px] h-full font-medium flex justify-center items-center gap-[5px] blogMenu" href="">Blog <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
+          <div class="w-[1081.2px] h-[397.6px] bg-amber-400 absolute top-[80px] left-[90px] hidden blog-dropdown"></div>
+
+          <a class="w-[112px] h-full font-medium flex justify-center items-center gap-[5px] PortfolioMenu" href="">Portfolio <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
+          <div class="w-[1200px] h-[397.6px] bg-emerald-500 absolute top-[80px] left-[90px] hidden Portfolio-dropdown"></div>
+
+          <a class="w-[93.4px] h-full font-medium flex justify-center items-center gap-[5px] pagesMenu" href="">Pages <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
+          <div class="w-full h-[397.6px] bg-teal-300 absolute top-[80px] left-0 hidden
+           pages-dropdown"></div>
+
+          <a class="w-[175.4px] h-full font-medium flex justify-center items-center gap-[5px] MyAccountMenu" href="">MyAccount <div class="w-[34px] h-[18px] bg-red-600 rounded-[50px] text-[10px] flex justify-center items-center text-[#fff]">NEW</div> <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
+          <div class="w-[220px] h-[540px] bg-indigo-500 absolute top-[80px] left-[767px] hidden MyAccount-dropdown"></div>
+        </div>
+
+        <div class="w-[407.6px] h-full flex justify-center items-center max-sm:hidden">
+          <div class="w-full h-[30px]">
+            <ul class="w-[397.6px] h-[30px] flex justify-center items-center">
+              <li class="w-[117.6px] h-[18.8px] mr-[40px] flex justify-center items-center border-b-[1px] border-solid border-[#343434]"><a href="">Login / Register</a></li>
+              <li class="w-[50px] h-[20px] flex justify-center items-center"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-magnifier-50.png" alt=""></a></li>
+              <li class="w-[50px] h-[20px] flex justify-center items-center"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-heart-50.png" alt=""></a></li>
+              <li class="w-[50px] h-[20px] flex justify-center items-center relative"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-cart-32.png" alt=""> <div class="w-[18px] h-[18px] rounded-full bg-red-600 absolute top-0 right-0 flex justify-center items-center text-[10px] text-[#fff]">5</div></a></li>
+              <li class="w-[90px] h-[30px] burgerMenu max-sm:block">
+                <a class="w-[60px] h-[30px] ml-[30px] flex justify-center items-center" href="#"><img class="w-[30px] h-[30px]" src="assets/img/icons8-menu-50.png" alt=""></a>
+              </li>
+              <div class="w-full h-[100vh] bg-black absolute left-0 top-0 opacity-[.5] burgermenuShadow hidden"></div>
+              <div class="w-[485px] h-[100vh] bg-[#fff] absolute top-0 right-0 BM-card hidden">
+                <div class="w-[20px] h-[20px] ml-auto mt-[20px] mr-[10px] cursor-pointer close-BMenu"><img src="assets/img/icons8-close-50.png" alt=""></div>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="relative max-sm:hidden">
+      <div class="w-[85%] h-[980px] m-auto flex mt-[80px]">
+        <div class="w-[860px] h-full">
+          <div class="w-full h-[626.8px] pt-[100px] pb-[100px]">
+            <div class="w-full h-[192px] mb-[24px] relative"><h1 class="text-[80px] leading-[1.2] font-semibold capitalize z-[1]">Make Your Fashion Look Mire <span class="charming text-yellow-200">Charming</span></h1>
+              <div class="w-[155px] h-[155px] rounded-full absolute top-[-20px] left-[-45px] z-[-1]">
+                <img class="w-full h-full rounded-full" src="assets/img/1.png" alt="">
+              </div>
+            </div>
+            <div class="w-full h-[60px] mb-[40px]"><h1 class="text-[25px] font-normal leading-[1.2]">Sell globally in minutes with localized currencies, languages, and <br> experiences in every market.</h1></div>
+            <div class="w-full h-[58.8px] relative">
+              <div class="w-[375.2px] h-full flex gap-[16px]">
+                <a class="w-[179.6px] h-full pt-[15px] pb-[15px] pr-[35px] pl-[35px] rounded-[10px] bg-[#000] tex-[16px] font-medium text-[#fff]" href="#">ADD TO CART</a>
+                <a class="w-[179.6px] h-full border-solid border-[1px] border-[#000] rounded-[10px] pt-[15px] pb-[15px] pr-[35px] pl-[35px] text-[16px] font-medium detailsStyle" href="#">VIEW DETAILS</a>
+              </div>
+              <div class="w-[155px] h-[155px] absolute bottom-[-96px] right-[160px] rounded-br-[100px]"><img class="w-full h-full rounded-br-[100px]" src="assets/img/2.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[25%] h-[1060px] bg-[#fff] absolute top-[-80px] right-0">
+          <div class="w-[530px] h-[700px] bg-[#fff] right-[15px] top-[150px] p-[20px] absolute rounded-[250px] flex justify-center items-center">
+            <div class="w-full h-full rounded-[250px]"><img src="assets/img/banner-media3.png" class="w-full h-full rounded-[250px]" alt=""></div>
+            <div class="w-[150px] h-[150px] rounded-full absolute bottom-0 right-[20px] flex justify-center items-center circle-rot">
+              <svg viewBox="0 0 100 100" width="100" height="100">
+              <defs>
+                <path id="circle"
+                  d="
+                    M 50, 50
+                    m -37, 0
+                    a 37,37 0 1,1 74,0
+                    a 37,37 0 1,1 -74,0"/>
+              </defs>
+              <text font-size="17">
+                <textPath xlink:href="#circle">
+                 COLLECTION EXPLORE MORE
+                </textPath>
+              </text>
+            </svg></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="w-[500px] h-[500px] bg-orange-500 hidden show"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/carousel/jquery.min.js"></script>
+    <script src="assets/carousel/owl.carousel.min.js"></script>
+</body>
+</html>
