@@ -124,3 +124,42 @@
   width: 100%;
   height: auto;
 }
+
+
+
+
+
+
+.active{
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+/* .circlee{
+  animation: circle 15s linear infinite;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+
+
+
+
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}

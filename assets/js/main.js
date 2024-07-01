@@ -193,7 +193,22 @@ $(document).ready(function() {
  
       items : 3,
       itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
+      itemsDesktopSmall : [979,3],
+      responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
  
   });
  
@@ -208,8 +223,84 @@ $(document).ready(function() {
 // let btn5 = document.getElementById('btn5');
 
 
-$(document).ready(function () {
-  $('#btn2').click(function () {
+$(document).ready(function() {
+  $('.btn').click(function() {
+    $('.btn').removeClass('active'); // Remove the 'active' class from all items
+    $(this).addClass('active'); // Add the 'active' class to the clicked item
+  });
+});
 
+
+
+
+
+
+
+$(document).ready(function () {
+  $('#btn1').click(function () {
+    $('#item1').fadeIn();
+    $('#item2').fadeIn();
+    $('#item3').fadeIn();
+    $('#item4').fadeIn();
+    $('#item5').fadeIn();
+    $('#item6').fadeIn();
+    $('#item7').fadeIn();
+    $('#item8').fadeIn();
   })
+  $('#btn2').click(function () {
+    $('#item1').fadeOut();
+    $('#item4').fadeOut();
+    $('#item6').fadeOut();
+    $('#item8').fadeOut();
+
+    $('#item2').fadeIn();
+    $('#item3').fadeIn();
+    $('#item5').fadeIn();
+    $('#item7').fadeIn();
+  })
+  $('#btn3').click(function () {
+    $('#item2').fadeOut();
+    $('#item3').fadeOut();
+    $('#item5').fadeOut();
+    $('#item6').fadeOut();
+    $('#item7').fadeOut();
+
+    $('#item1').fadeIn();
+    $('#item4').fadeIn();
+    $('#item8').fadeIn();
+  })
+  $('#btn4').click(function () {
+    $('#item1').fadeOut();
+    $('#item2').fadeOut();
+    $('#item3').fadeOut();
+    $('#item4').fadeOut();
+    $('#item5').fadeOut();
+    $('#item7').fadeOut();
+    $('#item8').fadeOut();
+
+    $('#item6').fadeIn();
+  })
+  $('#btn5').click(function () {
+    $('#item1').fadeOut();
+    $('#item3').fadeOut();
+    $('#item5').fadeOut();
+    $('#item6').fadeOut();
+    $('#item7').fadeOut();
+    $('#item8').fadeOut();
+
+    $('#item2').fadeIn();
+    $('#item4').fadeIn();
+  })
+});
+
+
+
+
+
+$(document).ready(function() {
+ 
+  $("#owl-demo2").owlCarousel({
+    navigation : true
+  });
+ 
 });
