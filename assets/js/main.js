@@ -147,6 +147,9 @@ $(document).ready(function (){
   // });
 
 
+  
+
+
 
 //for burger Menu
   $('.burgerMenu').click(function () {
@@ -303,4 +306,33 @@ $(document).ready(function() {
     navigation : true
   });
  
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.addEventListener("scroll", function() {
+    if (window.pageYOffset > 100) {
+      scrollToTopBtn.classList.add("show");
+    } else {
+      scrollToTopBtn.classList.remove("show");
+    }
+  });
+
+  scrollToTopBtn.addEventListener("click", function() {
+    scrollToTop(1000); // Adjust the scroll duration (in milliseconds) as needed
+  });
+
+  function scrollToTop(scrollDuration) {
+    var scrollStep = -window.scrollY / (scrollDuration / 15);
+    var scrollInterval = setInterval(function() {
+      if (window.scrollY !== 0) {
+        window.scrollBy(0, scrollStep);
+      } else {
+        clearInterval(scrollInterval);
+      }
+    }, 15);
+  }
 });

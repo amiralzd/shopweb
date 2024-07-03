@@ -23,7 +23,9 @@
 </head>
 <body id="body">
 
-    <header class="w-full h-[80px] flex justify-center items-center border-b-[1px] border-solid border-[#efefef] z-[10] absolute top-0 max-sm:h-[65px] max-sm:pl-[15px] max-sm:pr-[15px]">
+  <button id="scrollToTopBtn"></button>
+
+    <header class="navbar w-full h-[80px] flex justify-center items-center border-b-[1px] border-solid border-[#efefef] z-[10] absolute top-0 max-sm:h-[65px] max-sm:pl-[15px] max-sm:pr-[15px]">
       <div class="w-[90%] h-full flex max-sm:w-full">
         <div class="w-[13.1%] h-full mr-[50px] flex justify-center items-center max-sm:w-[180px] max-sm:h-[65px] max-sm:mr-0 max-sm:justify-normal max-sm:items-start max-sm:mt-[10px]"><a href=""><img class="max-sm:w-full max-sm:h-full" src="assets/img/logo.svg" alt=""></a></div>
         <div onclick="openNav()" class="sm:hidden w-[45px] h-[45px] bg-[#000] ml-auto mt-auto mb-auto p-[5px] res-burgerM"><img class="w-f h-full" src="assets/img/icons8-circled-menu-24.png" alt=""></div>
@@ -49,7 +51,7 @@
           <a class="w-[112px] h-full font-medium flex justify-center items-center gap-[5px] PortfolioMenu" href="">Portfolio <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
           <div class="w-[1200px] h-[397.6px] bg-emerald-500 absolute top-[80px] left-[90px] hidden Portfolio-dropdown"></div>
 
-          <a class="w-[93.4px] h-full font-medium flex justify-center items-center gap-[5px] pagesMenu" href="">Pages <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
+          <a class="w-[93.4px] h-full font-medium flex justify-center items-center gap-[5px] pagesMenu" href="about us.html">Pages <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
           <div class="w-full h-[397.6px] bg-teal-300 absolute top-[80px] left-0 hidden
            pages-dropdown"></div>
 
@@ -79,7 +81,7 @@
     </header>
 
     <main class="relative">
-      <div class="w-[85%] h-[890px] m-auto flex mt-[80px] max-sm:flex-col max-sm:w-[95%]">
+      <section class="w-[85%] h-[890px] m-auto flex mt-[80px] max-sm:flex-col max-sm:w-[95%]">
         <div class="w-[860px] h-full max-sm:w-full max-sm:h-[990.44px]">
           <div class="w-full h-[626.8px] pt-[100px] pb-[100px] max-sm:w-full max-sm:h-[374.6px] max-sm:pt-[30px] max-sm:pb-0">
             <div class="w-full h-[192px] mb-[24px] relative max-sm:h-[144px]"><h1 class="text-[80px] leading-[1.2] font-semibold capitalize z-[1] max-sm:text-[2.5rem]">Make Your Fashion Look Mire <span class="charming text-yellow-200">Charming</span></h1>
@@ -149,7 +151,7 @@
             </svg></div>
           </div>
         </div>
-      </div>
+      </section>
 
 
 
@@ -327,11 +329,7 @@
       <section class="w-full h-[500px] grid grid-cols-2 max-sm:w-[375.2px] max-sm:h-[560px] max-sm:grid-cols-1">
         <div class="w-full h-full relative">
           <img class="w-full h-full" src="assets/img/product1.png" alt="">
-          <div class="w-[352.4px] h-[370.4px] absolute right-[45px] top-[64.8px] rounded-full max-sm:w-[204px] max-sm:h-[216px] max-sm:top-[30px] max-sm:right-[20px]">
-            <div class="w-[352.4px] h-[370.4px]">
-              <!-- <img src="assets/img/image.png" alt=""> -->
-            </div>
-          </div>
+          <img class="w-[400px] absolute right-[0px] top-[50px] max-sm:w-[204px] max-sm:h-[216px] max-sm:top-[30px] max-sm:right-[20px]" src="assets/img/image.png" alt="">
         </div>
         <div class="w-full h-full relative">
           <img class="w-full h-full" src="assets/img/product2.png" alt="">
@@ -491,11 +489,13 @@
       </section>
 
 
-      <section class="w-full h-[438.2px] pt-[100px] max-sm:w-full max-sm:h-[368.2px] max-sm:pt-[40px] max-sm:pr-[15px] max-sm:pl-[15px] mt-[100px]">
+      <section class="w-full h-[438.2px] pt-[100px] max-sm:w-full max-sm:h-[368.2px] max-sm:pt-[40px] max-sm:pr-[15px] max-sm:pl-[15px] max-sm:mt-[100px]">
         <div class="w-[1320px] h-full m-auto max-sm:w-full max-sm:h-[30px] max-sm:mb-[20px]">
           <div class="w-full h-[50px] mb-[40px] flex justify-between max-sm:h-[30px]">
             <h2 class="w-[180.8px] h-[50px] text-[35px] font-semibold capitalize max-sm:w-[102.4px] max-sm:h-[30px] max-sm:text-[20px]">Sponsored</h2>
-            <a href="" class="w-[66.4px] h-[50px] text-[14px] capitalize max-sm:h-[30px]">See All</a>
+            <a href="" class="w-[66.4px] h-[50px] text-[14px] capitalize max-sm:h-[30px] flex justify-between">See All
+              <i class="w-[18.4px] h-[18px]"></i>
+            </a>
           </div>
           <div class="w-full flex">
             <div class="w-[300px] h-[248.2px] mr-[30px]">
@@ -555,48 +555,48 @@
 
 
 
-      <section class="w-full h-[993.66px] pt-[100px] mb-[500px]">
-        <div class="w-[1320px] h-[823.66px] m-auto pr-[15px] pl-[15px]">
-          <div class="w-full h-[93px] flex justify-between mb-[40px]">
-            <div class="w-[393.6px] h-[93px]">
-              <h2 class="w-full h-[42px] text-[35px] font-semibold capitalize">latest Post</h2>
-              <p class="w-full h-[27px] text-[18px] font-medium leading-[1.5]">Discover the most trending products in Pixio.</p>
+      <section class="w-full h-[993.66px] pt-[100px] max-sm:h-[1749.93px] max-sm:pt-[40px] max-sm:pr-[15px] max-sm:pl-[15px]">
+        <div class="w-[1320px] h-[823.66px] m-auto pr-[15px] pl-[15px] max-sm:w-full max-sm:h-[1689.93px] max-sm:pr-0 max-sm:pl-0">
+          <div class="w-full h-[93px] flex justify-between mb-[40px] max-sm:h-[114.8px] max-sm:flex-col max-sm:justify-normal">
+            <div class="w-[393.6px] h-[93px] max-sm:w-full max-sm:h-[54px]">
+              <h2 class="w-full h-[42px] text-[35px] font-semibold capitalize max-sm:h-[24px] max-sm:text-[20px] max-sm:mb-[6px]">latest Post</h2>
+              <p class="w-full h-[27px] text-[18px] font-medium leading-[1.5] max-sm:h-[24px] max-sm:text-[16px] max-sm:mb-[16px]">Discover the most trending products in Pixio.</p>
             </div>
             <a href="" class="w-[122.4px] h-[44.8px] flex justify-center items-center rounded-[10px] bg-[#000] mt-auto mb-auto text-[#fff]">View All</a>
           </div>
-          <div class="w-full h-[690.66px] flex">
-            <div class="w-[660px] h-[640.66px] relative pr-[15px]">
-              <img class="w-full h-full rounded-[30px]" src="assets/img/pic1.jpg" alt="">
-              <div class="w-[440px] h-[193.2px] absolute bottom-0 bg-[#fff] rounded-bl-[30px] rounded-tr-[30px] pt-[25px] pb-[25px] pr-[30px] pl-[30px]">
-                <div class="w-[380px] h-[35.6px] mb-[10px]">
+          <div class="w-full h-[690.66px] flex max-sm:h-[1555.13px] max-sm:flex-col">
+            <div class="w-[660px] h-[640.66px] relative pr-[15px] max-sm:w-full max-sm:h-[521px] max-sm:pr-0 max-sm:mb-[30px]">
+              <img class="w-full h-full rounded-[30px] max-sm:h-[334.6px]" src="assets/img/pic1.jpg" alt="">
+              <div class="w-[440px] h-[193.2px] absolute bottom-0 bg-[#fff] rounded-bl-[30px] rounded-tr-[30px] pt-[25px] pb-[25px] pr-[30px] pl-[30px] max-sm:w-full max-sm:h-[156.4px] max-sm:p-[20px]">
+                <div class="w-[380px] h-[35.6px] mb-[10px] max-sm:w-full">
                   <div class="w-[100px] h-[25.6px] bg-[#000] rounded-[5px] flex justify-center items-center text-[13px] font-semibold leading-[1.2] text-[#fff]">17 May 2023</div>
                 </div>
-                <div class="w-full h-[67.2px] text-[1.5rem] font-semibold leading-[1.4] mb-[8px]">
+                <div class="w-full h-[67.2px] text-[1.5rem] font-semibold leading-[1.4] mb-[8px] max-sm:h-[50.4px] max-sm:text-[18px] max-sm:mb-[8px]">
                   <a href="">Trendsetter Chronicles: Unveiling the Latest in Fashion</a>
                 </div>
                 <a href="" class="w-full h-[22.4px] gap-[5px] text-[14px]">Read More</a>
               </div>
             </div>
-            <div class="w-[660px] h-[640.66px] pl-[15px] grid grid-cols-1">
-              <div class="w-full h-[290px] flex">
-                <div class="w-[315px] h-[290px]"><img class="w-full h-full rounded-tl-[30px] rounded-bl-[30px]" src="assets/img/pic2.jpg" alt=""></div>
-                <div class="w-[315px] h-[290px] pt-[30px] pr-[25px] pb-[25px] pl-[25px]">
+            <div class="w-[660px] h-[640.66px] pl-[15px] grid grid-cols-1 max-sm:w-full max-sm:h-[974.13px] max-sm:pl-0">
+              <div class="w-full h-[290px] flex max-sm:flex-col max-sm:mb-[30px]">
+                <div class="w-[315px] h-[290px] max-sm:w-full max-sm:h-[287.66px]"><img class="w-full h-full rounded-tl-[30px] rounded-bl-[30px] max-sm:rounded-bl-none rounded-tr-[30px]" src="assets/img/pic2.jpg" alt=""></div>
+                <div class="w-[315px] h-[290px] pt-[30px] pr-[25px] pb-[25px] pl-[25px] max-sm:w-full max-sm:h-[169.4px]">
                   <div class="w-full h-[28.6px] mb-[10px]">
                     <div class="w-[97.6px] h-[25.6px] rounded-[5px] bg-[#000] flex justify-center items-center text-[13px] font-semibold leading-[1.2] text-[#fff]">17 May 2022</div>
                   </div>
-                  <a href="" class="w-[265px] h-[100.8px] text-[24px] font-medium hover:text-[#CC0D39] transition-colors">Dress to Impress: Elevate Your Everyday Style</a>
+                  <a href="" class="w-[265px] h-[100.8px] text-[24px] font-medium hover:text-[#CC0D39] transition-colors max-sm:w-full max-sm:h-[50.4px] max-sm:text-[18px]">Dress to Impress: Elevate Your Everyday Style</a>
                   <a href="" class="w-[93px] h-[22.4px] flex justify-between mt-[44px]">
                     <div class="w-[93px] h-[22px] text-[14px] font-semibold">Read More</div>
                   </a>
                 </div>
               </div>
-              <div class="w-full h-[290px] flex">
-                <div class="w-[315px] h-[290px]"><img class="w-full h-full rounded-tl-[30px] rounded-bl-[30px]" src="assets/img/pic2.jpg" alt=""></div>
-                <div class="w-[315px] h-[290px] pt-[30px] pr-[25px] pb-[25px] pl-[25px]">
+              <div class="w-full h-[290px] flex max-sm:flex-col max-sm:mb-[30px]">
+                <div class="w-[315px] h-[290px] max-sm:w-full max-sm:h-[287.66px]"><img class="w-full h-full rounded-tl-[30px] rounded-bl-[30px] max-sm:rounded-bl-none rounded-tr-[30px]" src="assets/img/pic2.jpg" alt=""></div>
+                <div class="w-[315px] h-[290px] pt-[30px] pr-[25px] pb-[25px] pl-[25px] max-sm:w-full max-sm:h-[169.4px]">
                   <div class="w-full h-[28.6px] mb-[10px]">
                     <div class="w-[97.6px] h-[25.6px] rounded-[5px] bg-[#000] flex justify-center items-center text-[13px] font-semibold leading-[1.2] text-[#fff]">17 May 2022</div>
                   </div>
-                  <a href="" class="w-[265px] h-[100.8px] text-[24px] font-medium hover:text-[#CC0D39] transition-colors">Dress to Impress: Elevate Your Everyday Style</a>
+                  <a href="" class="w-[265px] h-[100.8px] text-[24px] font-medium hover:text-[#CC0D39] transition-colors max-sm:w-full max-sm:h-[50.4px] max-sm:text-[18px]">Dress to Impress: Elevate Your Everyday Style</a>
                   <a href="" class="w-[93px] h-[22.4px] flex justify-between mt-[44px]">
                     <div class="w-[93px] h-[22px] text-[14px] font-semibold">Read More</div>
                   </a>
@@ -609,6 +609,125 @@
 
 
     </main>
+
+
+
+    <footer class="w-full h-[528px] max-sm:h-[1278.4px] border-t-[1px] border-solid border-[#000]">
+      <div class="w-full h-[446.4px] pt-[90px] pb-[60px] max-sm:h-[1175.4px] max-sm:pt-[50px] max-sm:pb-0">
+        <div class="w-[1320px] h-[296.4px] pr-[15px] pl-[15px] m-auto flex max-sm:w-full max-sm:h-[1125.4] max-sm:flex-wrap">
+          <div class="w-[330px] h-[295.4px] pr-[15px] pl-[15px] max-sm:pr-0 max-sm:pl-0 max-sm:w-full">
+            <div class="w-[292px] h-[265.4px]">
+              <div class="w-full h-[46px] mb-[24px]"><img src="assets/img/logo.svg" alt=""></div>
+              <div class="w-full h-[96px] mb-[24px]">
+                <div class="w-full h-[32px] pt-[4px] pb-[4px] text-[15px] font-medium">Address : 451 Wall Street, UK, London</div>
+                <div class="w-full h-[32px] pt-[4px] pb-[4px] text-[15px] font-medium">E-mail : example@info.com</div>
+                <div class="w-full h-[32px] pt-[4px] pb-[4px] text-[15px] font-medium">Phone : (064) 332-1233</div>
+              </div>
+              <div class="w-full h-[75.4px]">
+                <h6 class="w-full h-[22.4px] mb-[8px] text-[1rem] font-medium capitalize">subscribe to our newsletter</h6>
+                <form action="">
+                  <div class="w-[292px] h-[45px] rounded-[10px] relative">
+                    <input type="text" class="w-full h-full rounded-[10px] bg-[#FEEB9D] pt-[10px] pb-[10px] pr-[20px] pl-[20px]" placeholder="Your Email Address">
+                    <div class="w-[45px] h-[45px] absolute top-0 right-0"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[330px] h-[296.4px] pr-[15px] pl-[15px] max-sm:pr-0 max-sm:pl-0 max-sm:w-full max-sm:h-[286px]">
+            <div class="w-full h-[266.4px]">
+              <h5 class="w-full h-[24px] mb-[20px] text-[20px] font-semibold leading-[1.2]">Recent Posts</h5>
+              <div class="w-full h-[222.4px]">
+                <div class="w-full h-[76px] pb-[16px] flex">
+                  <div class="w-[60px] h-[60px] mr-[15px]"><img class="rounded-[10px] w-full h-full" src="assets/img/1.png" alt=""></div>
+                  <div class="w-[217.6px] h-[48px] mt-auto mb-auto">
+                    <h6 class="w-[217.6px] h-[22.4px] font-semibold text-[1rem] leading-[1.4]">Cozy Knit Cardigan Sweater</h6>
+                    <span class="w-[77.6px] h-[16.8px] text-[13px] font-normal">July 23, 2023</span>
+                  </div>
+                </div>
+
+                <div class="w-full h-[76px] pb-[16px] flex">
+                  <div class="w-[60px] h-[60px] mr-[15px]"><img class="rounded-[10px] w-full h-full" src="assets/img/1.png" alt=""></div>
+                  <div class="w-[217.6px] h-[48px] mt-auto mb-auto">
+                    <h6 class="w-[217.6px] h-[22.4px] font-semibold text-[1rem] leading-[1.4]">Cozy Knit Cardigan Sweater</h6>
+                    <span class="w-[77.6px] h-[16.8px] text-[13px] font-normal">July 23, 2023</span>
+                  </div>
+                </div>
+
+                <div class="w-full h-[76px] pb-[16px] flex">
+                  <div class="w-[60px] h-[60px] mr-[15px]"><img class="rounded-[10px] w-full h-full" src="assets/img/1.png" alt=""></div>
+                  <div class="w-[217.6px] h-[48px] mt-auto mb-auto">
+                    <h6 class="w-[217.6px] h-[22.4px] font-semibold text-[1rem] leading-[1.4]">Cozy Knit Cardigan Sweater</h6>
+                    <span class="w-[77.6px] h-[16.8px] text-[13px] font-normal">July 23, 2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[660px] h-[296.4px] max-sm:w-full flex">
+            <div class="w-[220px] h-[296.4px] pr-[15px] pl-[15px] max-sm:pr-0 max-sm:pl-0 max-sm:w-[177.6px] max-sm:h-[290px]">
+              <div class="w-full h-[260px]">
+                <h5 class="w-full h-[24px] mb-[20px] text-[20px] font-semibold leading-[1.2]">Our Stores</h5>
+                <ul class="w-[190px] h-[216px]">
+                  <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">New York</a></li>
+                  <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">London SF</a></li>
+                  <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Edinburgh</a></li>
+                  <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Los Angeles</a></li>
+                  <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Chicago</a></li>
+                  <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Las Vegas</a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="w-[220px] h-[296.4px] pr-[15px] pl-[15px] max-sm:pr-0 max-sm:pl-0 max-sm:w-[177.6px] max-sm:h-[290px]">
+              <div class="w-full h-[260px]">
+                <h5 class="w-full h-[24px] mb-[20px] text-[20px] font-semibold leading-[1.2]">Useful Links</h5>
+                <ul class="w-[190px] h-[216px]">
+                  <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Privacy Policy</a></li>
+                  <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Returns</a></li>
+                  <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Terms & Conditions</a></li>
+                  <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Contact Us</a></li>
+                  <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Latest News</a></li>
+                  <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Our Sitemap</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[220px] h-[296.4px] pr-[15px] pl-[15px] max-sm:pr-0 max-sm:pl-0 max-sm:w-[177.6px] max-sm:h-[290px]">
+            <div class="w-full h-[260px]">
+              <h5 class="w-full h-[24px] mb-[20px] text-[20px] font-semibold leading-[1.2]">Footer Menu</h5>
+              <ul class="w-[190px] h-[216px]">
+                <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Instagram profile</a></li>
+                <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">New Collection</a></li>
+                <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Woman Dress</a></li>
+                <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Contact Us</a></li>
+                <li class="w-full h-[36px] pt-[8px] pb-[8px] text-[15px] font-medium leading-[1.25rem]"><a href="">Latest News</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="w-full h-[80.8px] max-sm:h-[102.2px]">
+        <div class="w-[1320px] h-[80.8px] m-auto border-t-[1px] border-solid border-[#e1e1e1] pr-[15px] pl-[15px] max-sm:w-full max-sm:h-[102.2px]">
+          <div class="w-full h-full pt-[28px] pb-[28px] grid grid-cols-2 max-sm:grid-cols-1 max-sm:pt-[20px] max-sm:pb-[20px]">
+            <div class="w-full h-full font-semibold max-sm:text-[15.5px]">
+              © 
+              <span>2024</span>
+              <a href="" class="text-[#CC0D39]">DexignZone</a>
+              Theme. All Rights Reserved.
+            </div>
+            <div class="w-full h-full flex justify-end items-center max-sm:justify-center">
+              <span class="w-[84.8px] h-[24px] font-semibold">We Accept: </span>
+              <img class="w-[223px] h-[20px]" src="assets/img/footer-img.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
