@@ -336,3 +336,232 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 15);
   }
 });
+
+
+
+let selectedBox = null;
+
+function selectBox(boxNumber) {
+  if (selectedBox !== null) {
+    selectedBox.classList.remove('selected');
+  }
+  
+  const box = document.querySelector(`.box:nth-child(${boxNumber})`);
+  box.classList.add('selected');
+  selectedBox = box;
+};
+
+
+
+
+let selectedCircle = null;
+
+function selectCircle(event) {
+  const clickedCircle = event.target;
+  
+  if (selectedCircle !== null) {
+    selectedCircle.classList.remove('active');
+  }
+  
+  clickedCircle.classList.add('active');
+  selectedCircle = clickedCircle;
+};
+
+
+
+// Get the element with class "noUi-connect"
+const element = document.querySelector('.noUi-connect');
+
+// Modify the style properties
+// element.style.transform = 'translate(0%, 0px) scale(1, 1)';
+
+
+
+
+
+
+let number = 0;
+
+function moveNumberUp() {
+  number++;
+  document.getElementById("numberBox").value = number;
+}
+
+function moveNumberDown() {
+  number--;
+  document.getElementById("numberBox").value = number;
+}
+
+
+
+
+
+function activateBox(boxId) {
+  const boxes = document.querySelectorAll('.box');
+  boxes.forEach(box => {
+    if (box.id === boxId) {
+      box.classList.add('product-active');
+    } else {
+      box.classList.remove('product-active');
+    }
+  });
+}
+
+
+
+
+
+$(document).ready(function () {
+  $('#card2').click(function () {
+    $('#card2').addClass("product-active");
+    $('#card1').removeClass("product-active");
+    $('#card3').removeClass("product-active");
+  })
+
+  $('#card3').click(function () {
+    $('#card3').addClass("product-active");
+    $('#card1').removeClass("product-active");
+    $('#card2').removeClass("product-active");
+  })
+
+  $('#card1').click(function () {
+    $('#card1').addClass("product-active");
+    $('#card2').removeClass("product-active");
+    $('#card3').removeClass("product-active");
+  })
+})
+
+
+
+
+$(document).ready(function () {
+  $('#colorItem1').click(function () {
+    $('#colorItem1').addClass("borderActive");
+    $('#colorItem2').removeClass("borderActive");
+    $('#colorItem3').removeClass("borderActive");
+    $('#colorItem4').removeClass("borderActive");
+  })
+
+  $('#colorItem2').click(function () {
+    $('#colorItem2').addClass("borderActive");
+    $('#colorItem1').removeClass("borderActive");
+    $('#colorItem3').removeClass("borderActive");
+    $('#colorItem4').removeClass("borderActive");
+  })
+
+  $('#colorItem3').click(function () {
+    $('#colorItem3').addClass("borderActive");
+    $('#colorItem1').removeClass("borderActive");
+    $('#colorItem2').removeClass("borderActive");
+    $('#colorItem4').removeClass("borderActive");
+  })
+
+  $('#colorItem4').click(function () {
+    $('#colorItem4').addClass("borderActive");
+    $('#colorItem1').removeClass("borderActive");
+    $('#colorItem2').removeClass("borderActive");
+    $('#colorItem3').removeClass("borderActive");
+  })
+})
+
+
+
+$(document).ready(function () {
+  $('.btn1').click(function () {
+    $('.container1').show();
+    $('.container2').hide();
+    $('.btn1').addClass('btn-border');
+    $('.btn2').removeClass('btn-border');
+  })
+  $('.btn2').click(function () {
+    $('.container2').show();
+    $('.container1').hide();
+    $('.btn2').addClass('btn-border');
+    $('.btn1').removeClass('btn-border');
+  })
+})
+
+
+
+
+$(document).ready(function() {
+ 
+  $("#owl-product").owlCarousel({
+    navigation : true,
+    nav: false,
+  });
+ 
+});
+
+
+//lightGallery
+var handleLightgallery = function () {
+  if (jQuery('#lightgallery').length > 0) {
+    lightGallery(document.getElementById('lightgallery'), {
+      plugins: [lgThumbnail, lgZoom],
+      selector: '.lg-item',
+      thumbnail: true,
+      exThumbImage: 'data-src'
+    });
+  }
+  
+}
+
+
+
+
+
+
+
+(function() {
+
+  var parent = document.querySelector(".range-slider");
+  if(!parent) return;
+
+  var
+    rangeS = parent.querySelectorAll("input[type=range]"),
+    numberS = parent.querySelectorAll("input[type=number]");
+
+  rangeS.forEach(function(el) {
+    el.oninput = function() {
+      var slide1 = parseFloat(rangeS[0].value),
+        	slide2 = parseFloat(rangeS[1].value);
+
+      if (slide1 > slide2) {
+				[slide1, slide2] = [slide2, slide1];
+        // var tmp = slide2;
+        // slide2 = slide1;
+        // slide1 = tmp;
+      }
+
+      numberS[0].value = slide1;
+      numberS[1].value = slide2;
+    }
+  });
+
+  numberS.forEach(function(el) {
+    el.oninput = function() {
+			var number1 = parseFloat(numberS[0].value),
+					number2 = parseFloat(numberS[1].value);
+			
+      if (number1 > number2) {
+        var tmp = number1;
+        numberS[0].value = number2;
+        numberS[1].value = tmp;
+      }
+
+      rangeS[0].value = number1;
+      rangeS[1].value = number2;
+
+    }
+  });
+
+})();
+
+
+
+
+
+
+
+
