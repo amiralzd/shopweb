@@ -1,150 +1,150 @@
 $(document).ready(function (){
 
-    //for navbar
-  //   var timer;
+    // for navbar
+    var timer;
 
-  // // Hover over button
-  // $('.homeMenu').hover(
-  //   function() {
-  //     clearTimeout(timer); // Clear any previous fade-out timer
-  //     $('.home-dropdown').fadeIn(); // Fade in the box
-  //   },
-  //   function() {
-  //     // Set a timer to fade out the box after 1 second
-  //     timer = setTimeout(function() {
-  //       $('.home-dropdown').fadeOut();
-  //     });
-  //   }
-  // );
-  // // Mouse movements inside the box
-  // $('.home-dropdown').on('mouseenter', function() {
-  //   clearTimeout(timer); // Clear any fade-out timer
-  // }).on('mouseleave', function() {
-  //   // Set a timer to fade out the box after 1 second
-  //   timer = setTimeout(function() {
-  //     $('.home-dropdown').fadeOut();
-  //   });
-  // });
-
-
-
-  // $('.shopMenu').hover(
-  //   function() {
-  //     clearTimeout(timer); // Clear any previous fade-out timer
-  //     $('.shop-dropdown').fadeIn(); // Fade in the box
-  //   },
-  //   function() {
-  //     // Set a timer to fade out the box after 1 second
-  //     timer = setTimeout(function() {
-  //       $('.shop-dropdown').fadeOut();
-  //     });
-  //   }
-  // );
-  // // Mouse movements inside the box
-  // $('.shop-dropdown').on('mouseenter', function() {
-  //   clearTimeout(timer); // Clear any fade-out timer
-  // }).on('mouseleave', function() {
-  //   // Set a timer to fade out the box after 1 second
-  //   timer = setTimeout(function() {
-  //     $('.shop-dropdown').fadeOut();
-  //   });
-  // });
+  // Hover over button
+  $('.homeMenu').hover(
+    function() {
+      clearTimeout(timer); // Clear any previous fade-out timer
+      $('.home-dropdown').fadeIn(); // Fade in the box
+    },
+    function() {
+      // Set a timer to fade out the box after 1 second
+      timer = setTimeout(function() {
+        $('.home-dropdown').fadeOut();
+      });
+    }
+  );
+  // Mouse movements inside the box
+  $('.home-dropdown').on('mouseenter', function() {
+    clearTimeout(timer); // Clear any fade-out timer
+  }).on('mouseleave', function() {
+    // Set a timer to fade out the box after 1 second
+    timer = setTimeout(function() {
+      $('.home-dropdown').fadeOut();
+    });
+  });
 
 
 
-  // $('.blogMenu').hover(
-  //   function() {
-  //     clearTimeout(timer); // Clear any previous fade-out timer
-  //     $('.blog-dropdown').fadeIn(); // Fade in the box
-  //   },
-  //   function() {
-  //     // Set a timer to fade out the box after 1 second
-  //     timer = setTimeout(function() {
-  //       $('.blog-dropdown').fadeOut();
-  //     });
-  //   }
-  // );
-  // // Mouse movements inside the box
-  // $('.blog-dropdown').on('mouseenter', function() {
-  //   clearTimeout(timer); // Clear any fade-out timer
-  // }).on('mouseleave', function() {
-  //   // Set a timer to fade out the box after 1 second
-  //   timer = setTimeout(function() {
-  //     $('.blog-dropdown').fadeOut();
-  //   });
-  // });
+  $('.shopMenu').hover(
+    function() {
+      clearTimeout(timer); // Clear any previous fade-out timer
+      $('.shop-dropdown').fadeIn(); // Fade in the box
+    },
+    function() {
+      // Set a timer to fade out the box after 1 second
+      timer = setTimeout(function() {
+        $('.shop-dropdown').fadeOut();
+      });
+    }
+  );
+  // Mouse movements inside the box
+  $('.shop-dropdown').on('mouseenter', function() {
+    clearTimeout(timer); // Clear any fade-out timer
+  }).on('mouseleave', function() {
+    // Set a timer to fade out the box after 1 second
+    timer = setTimeout(function() {
+      $('.shop-dropdown').fadeOut();
+    });
+  });
 
 
 
-  // $('.PortfolioMenu').hover(
-  //   function() {
-  //     clearTimeout(timer); // Clear any previous fade-out timer
-  //     $('.Portfolio-dropdown').fadeIn(); // Fade in the box
-  //   },
-  //   function() {
-  //     // Set a timer to fade out the box after 1 second
-  //     timer = setTimeout(function() {
-  //       $('.Portfolio-dropdown').fadeOut();
-  //     });
-  //   }
-  // );
-  // // Mouse movements inside the box
-  // $('.Portfolio-dropdown').on('mouseenter', function() {
-  //   clearTimeout(timer); // Clear any fade-out timer
-  // }).on('mouseleave', function() {
-  //   // Set a timer to fade out the box after 1 second
-  //   timer = setTimeout(function() {
-  //     $('.Portfolio-dropdown').fadeOut();
-  //   });
-  // });
+  $('.blogMenu').hover(
+    function() {
+      clearTimeout(timer); // Clear any previous fade-out timer
+      $('.blog-dropdown').fadeIn(); // Fade in the box
+    },
+    function() {
+      // Set a timer to fade out the box after 1 second
+      timer = setTimeout(function() {
+        $('.blog-dropdown').fadeOut();
+      });
+    }
+  );
+  // Mouse movements inside the box
+  $('.blog-dropdown').on('mouseenter', function() {
+    clearTimeout(timer); // Clear any fade-out timer
+  }).on('mouseleave', function() {
+    // Set a timer to fade out the box after 1 second
+    timer = setTimeout(function() {
+      $('.blog-dropdown').fadeOut();
+    });
+  });
 
 
 
-  // $('.pagesMenu').hover(
-  //   function() {
-  //     clearTimeout(timer); // Clear any previous fade-out timer
-  //     $('.pages-dropdown').fadeIn(); // Fade in the box
-  //   },
-  //   function() {
-  //     // Set a timer to fade out the box after 1 second
-  //     timer = setTimeout(function() {
-  //       $('.pages-dropdown').fadeOut();
-  //     });
-  //   }
-  // );
-  // // Mouse movements inside the box
-  // $('.pages-dropdown').on('mouseenter', function() {
-  //   clearTimeout(timer); // Clear any fade-out timer
-  // }).on('mouseleave', function() {
-  //   // Set a timer to fade out the box after 1 second
-  //   timer = setTimeout(function() {
-  //     $('.pages-dropdown').fadeOut();
-  //   });
-  // });
+  $('.PortfolioMenu').hover(
+    function() {
+      clearTimeout(timer); // Clear any previous fade-out timer
+      $('.Portfolio-dropdown').fadeIn(); // Fade in the box
+    },
+    function() {
+      // Set a timer to fade out the box after 1 second
+      timer = setTimeout(function() {
+        $('.Portfolio-dropdown').fadeOut();
+      });
+    }
+  );
+  // Mouse movements inside the box
+  $('.Portfolio-dropdown').on('mouseenter', function() {
+    clearTimeout(timer); // Clear any fade-out timer
+  }).on('mouseleave', function() {
+    // Set a timer to fade out the box after 1 second
+    timer = setTimeout(function() {
+      $('.Portfolio-dropdown').fadeOut();
+    });
+  });
 
 
 
-  // $('.MyAccountMenu').hover(
-  //   function() {
-  //     clearTimeout(timer); // Clear any previous fade-out timer
-  //     $('.MyAccount-dropdown').fadeIn(); // Fade in the box
-  //   },
-  //   function() {
-  //     // Set a timer to fade out the box after 1 second
-  //     timer = setTimeout(function() {
-  //       $('.MyAccount-dropdown').fadeOut();
-  //     });
-  //   }
-  // );
-  // // Mouse movements inside the box
-  // $('.MyAccount-dropdown').on('mouseenter', function() {
-  //   clearTimeout(timer); // Clear any fade-out timer
-  // }).on('mouseleave', function() {
-  //   // Set a timer to fade out the box after 1 second
-  //   timer = setTimeout(function() {
-  //     $('.MyAccount-dropdown').fadeOut();
-  //   });
-  // });
+  $('.pagesMenu').hover(
+    function() {
+      clearTimeout(timer); // Clear any previous fade-out timer
+      $('.pages-dropdown').fadeIn(); // Fade in the box
+    },
+    function() {
+      // Set a timer to fade out the box after 1 second
+      timer = setTimeout(function() {
+        $('.pages-dropdown').fadeOut();
+      });
+    }
+  );
+  // Mouse movements inside the box
+  $('.pages-dropdown').on('mouseenter', function() {
+    clearTimeout(timer); // Clear any fade-out timer
+  }).on('mouseleave', function() {
+    // Set a timer to fade out the box after 1 second
+    timer = setTimeout(function() {
+      $('.pages-dropdown').fadeOut();
+    });
+  });
+
+
+
+  $('.MyAccountMenu').hover(
+    function() {
+      clearTimeout(timer); // Clear any previous fade-out timer
+      $('.MyAccount-dropdown').fadeIn(); // Fade in the box
+    },
+    function() {
+      // Set a timer to fade out the box after 1 second
+      timer = setTimeout(function() {
+        $('.MyAccount-dropdown').fadeOut();
+      });
+    }
+  );
+  // Mouse movements inside the box
+  $('.MyAccount-dropdown').on('mouseenter', function() {
+    clearTimeout(timer); // Clear any fade-out timer
+  }).on('mouseleave', function() {
+    // Set a timer to fade out the box after 1 second
+    timer = setTimeout(function() {
+      $('.MyAccount-dropdown').fadeOut();
+    });
+  });
 
 
   
@@ -486,10 +486,18 @@ $(document).ready(function () {
 
 $(document).ready(function() {
  
-  $("#owl-product").owlCarousel({
-    navigation : true,
-    nav: false,
-  });
+  $("#owl-product").owlCarousel();
+ 
+});
+
+
+
+
+$(document).ready(function() {
+ 
+  $("#shop-item1").click(function () {
+    $('#shopItemsDrop').toggle();
+  })
  
 });
 

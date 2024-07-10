@@ -25,65 +25,361 @@
 
   <button id="scrollToTopBtn"></button>
 
-    <header class="navbar w-full h-[80px] flex justify-center items-center border-b-[1px] border-solid border-[#efefef] z-[10] absolute top-0 max-sm:h-[65px] max-sm:pl-[15px] max-sm:pr-[15px] bg-[#fff]">
-      <div class="w-[90%] h-full flex max-sm:w-full">
-        <div class="w-[13.1%] h-full mr-[50px] flex justify-center items-center max-sm:w-[180px] max-sm:h-[65px] max-sm:mr-0 max-sm:justify-normal max-sm:items-start max-sm:mt-[10px]"><a href=""><img class="max-sm:w-full max-sm:h-full" src="assets/img/logo.svg" alt=""></a></div>
-        <div onclick="openNav()" class="sm:hidden w-[45px] h-[45px] bg-[#000] ml-auto mt-auto mb-auto p-[5px] res-burgerM"><img class="w-f h-full" src="assets/img/icons8-circled-menu-24.png" alt=""></div>
+  <header class="navbar w-full h-[80px] flex justify-center items-center border-b-[1px] border-solid border-[#efefef] z-[10] absolute top-0 max-sm:h-[65px] max-sm:pl-[15px] max-sm:pr-[15px] bg-[#fff]">
+    <div class="w-[90%] h-full flex max-sm:w-full">
+      <div class="w-[13.1%] h-full mr-[50px] flex justify-center items-center max-sm:w-[180px] max-sm:h-[65px] max-sm:mr-0 max-sm:justify-normal max-sm:items-start max-sm:mt-[10px]"><a href=""><img class="max-sm:w-full max-sm:h-full" src="assets/img/logo.svg" alt=""></a></div>
+      <div onclick="openNav()" class="sm:hidden w-[45px] h-[45px] bg-[#000] ml-auto mt-auto mb-auto p-[5px] res-burgerM"><img class="w-f h-full" src="assets/img/icons8-circled-menu-24.png" alt=""></div>
 
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
-        </div>
-
-        <div class="w-[52.8%] h-full flex max-sm:hidden">
-          <a class="w-[12.5%] h-full font-medium flex justify-center items-center gap-[5px] homeMenu" href="index.html">Home <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
-          <div class="w-[820px] h-[397.6px] bg-yellow-300 absolute top-[80px] hidden home-dropdown"></div>
-
-          <a class="w-[86.2px] h-full flex justify-center items-center font-medium gap-[5px] shopMenu" href="shop.html">Shop <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
-          <div class="w-[1140px] h-[397.6px] bg-lime-400 absolute top-[80px] left-[90px] hidden shop-dropdown"></div>
-
-          <a class="w-[80px] h-full font-medium flex justify-center items-center gap-[5px] blogMenu" href="">Blog <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
-          <div class="w-[1081.2px] h-[397.6px] bg-amber-400 absolute top-[80px] left-[90px] hidden blog-dropdown"></div>
-
-          <a class="w-[112px] h-full font-medium flex justify-center items-center gap-[5px] PortfolioMenu" href="">Portfolio <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
-          <div class="w-[1200px] h-[397.6px] bg-emerald-500 absolute top-[80px] left-[90px] hidden Portfolio-dropdown"></div>
-
-          <a class="w-[93.4px] h-full font-medium flex justify-center items-center gap-[5px] pagesMenu" href="">Pages <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
-          <div class="w-full h-[397.6px] bg-teal-300 absolute top-[80px] left-0 hidden
-           pages-dropdown"></div>
-
-          <a class="w-[175.4px] h-full font-medium flex justify-center items-center gap-[5px] MyAccountMenu" href="">MyAccount <div class="w-[34px] h-[18px] bg-red-600 rounded-[50px] text-[10px] flex justify-center items-center text-[#fff]">NEW</div> <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
-          <div class="w-[220px] h-[540px] bg-indigo-500 absolute top-[80px] left-[767px] hidden MyAccount-dropdown"></div>
-        </div>
-
-        <div class="w-[407.6px] h-full flex justify-center items-center max-sm:hidden">
-          <div class="w-full h-[30px]">
-            <ul class="w-[397.6px] h-[30px] flex justify-center items-center">
-              <li class="w-[117.6px] h-[18.8px] mr-[40px] flex justify-center items-center border-b-[1px] border-solid border-[#343434]"><a href="">Login / Register</a></li>
-              <li class="w-[50px] h-[20px] flex justify-center items-center"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-magnifier-50.png" alt=""></a></li>
-              <li class="w-[50px] h-[20px] flex justify-center items-center"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-heart-50.png" alt=""></a></li>
-              <li class="w-[50px] h-[20px] flex justify-center items-center relative"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-cart-32.png" alt=""> <div class="w-[18px] h-[18px] rounded-full bg-red-600 absolute top-0 right-0 flex justify-center items-center text-[10px] text-[#fff]">5</div></a></li>
-              <li class="w-[90px] h-[30px] burgerMenu max-sm:block">
-                <a class="w-[60px] h-[30px] ml-[30px] flex justify-center items-center" href="#"><img class="w-[30px] h-[30px]" src="assets/img/icons8-menu-50.png" alt=""></a>
-              </li>
-              <div class="w-full h-[100vh] bg-black absolute left-0 top-0 opacity-[.5] burgermenuShadow hidden"></div>
-              <div class="w-[485px] h-[100vh] bg-[#fff] absolute top-0 right-0 BM-card hidden">
-                <div class="w-[20px] h-[20px] ml-auto mt-[20px] mr-[10px] cursor-pointer close-BMenu"><img src="assets/img/icons8-close-50.png" alt=""></div>
-              </div>
-            </ul>
-          </div>
-        </div>
-
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
       </div>
-    </header>
+
+      <div class="w-[52.8%] h-full flex max-sm:hidden">
+        <a class="w-[12.5%] h-full font-medium flex justify-center items-center gap-[5px] homeMenu" href="index.html">Home <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
+        <!-- <div class="dropdownSH w-[820px] h-[397.6px] bg-yellow-300 absolute top-[80px] hidden home-dropdown"></div> -->
+
+        <button class="w-[86.2px] h-full flex justify-center items-center font-medium gap-[5px] shopMenu">Shop <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></button>
+        <div class="dropdownSH w-[1140px] h-[529.4px] bg-[#fff] absolute top-[80px] left-[90px] hidden shop-dropdown p-[50px]">
+          <ul class="w-full h-[439.8px] flex">
+            <li class="w-[706.2px] h-full pr-[15px]">
+              <ul class="w-full h-full flex flex-wrap">
+
+                <li class="title w-[225.38px] h-[255px]">
+                  <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Shop Structure</a>
+                  <ul class="w-full h-[210px]">
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="shop.html">Shop Structure</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Shop List</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Shop With Category</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Shop Filters Top Bar</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Shop Sidebar</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Shop Style 1</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Shop Style 2</a>
+                    </li>
+                  </ul>
+                </li>
+
+
+                <li class="title w-[225.38px] h-[255px]">
+                  <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Product Structure</a>
+                  <ul class="w-full h-[210px]">
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="product.html">Default</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Thumbnail</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Grid Media</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Carousel</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Full Width</a>
+                    </li>
+                  </ul>
+                </li>
+
+
+                <li class="title w-[225.38px] h-[255px]">
+                  <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Shop Pages</a>
+                  <ul class="w-full h-[210px]">
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Wishlist</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Cart</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Checkout</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Compare</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Order Tracking</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Login</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Registration</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="w-[676.2px] h-[144.8px] mt-[25px] p-[15px] flex justify-center items-center border-[1px] border-solid border-[#eee]">
+                  <div class="w-[379px] h-[113.2px] mr-[16px]">
+                    <h3 class="w-full h-[33.6px] text-[1.5rem] leading-[1.4] font-semibold mb-[8px]">Deal of the month</h3>
+                    <p class="w-full h-[71.6px] text-[13px] text-[#5E626F] font-light">
+                      Yes! Send me exclusive offers, personalised, and unique gift ideas, tips for shopping on Pixio 
+                      <br>
+                      <a href="" class="w-full h-[39px] pt-[5px] pb-[5px] text-[14px] text-[#5E626F] leading-[20px] font-normal capitalize">View All Products</a>
+                    </p>
+                  </div>
+                  <div class="w-[249.6px] h-[73.2px] flex">
+                    <div class="w-[50px] h-[73.2px] mr-[5px] ml-[5px]">
+                      <div class="w-[50px] h-[50px] mb-[4px] text-[22px] font-medium leading-[50px] bg-[#eee] text-center">31</div>
+                      <div class="w-full h-[16px] text-[12px] font-normal uppercase text-center">Days</div>
+                    </div>
+                    <div class="w-[50px] h-[73.2px] mr-[5px] ml-[5px]">
+                      <div class="w-[50px] h-[50px] mb-[4px] text-[22px] font-medium leading-[50px] bg-[#eee] text-center">12</div>
+                      <div class="w-full h-[16px] text-[12px] font-normal uppercase text-center">hours</div>
+                    </div>
+                    <div class="w-[50px] h-[73.2px] mr-[5px] ml-[5px]">
+                      <div class="w-[50px] h-[50px] mb-[4px] text-[22px] font-medium leading-[50px] bg-[#eee] text-center">11</div>
+                      <div class="w-full h-[16px] text-[12px] font-normal uppercase text-center">minutess</div>
+                    </div>
+                    <div class="w-[50px] h-[73.2px] mr-[5px] ml-[5px]">
+                      <div class="w-[50px] h-[50px] mb-[4px] text-[22px] font-medium leading-[50px] bg-[#eee] text-center">5</div>
+                      <div class="w-full h-[16px] text-[12px] font-normal uppercase text-center">second</div>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="w-[368.8px] h-[439.8px] pl-[15px]">
+              <div class="w-full h-full pl-[20px]">
+                <img src="assets/img/1 (1).png" class="rounded-[20px] w-full h-full" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button class="w-[80px] h-full font-medium flex justify-center items-center gap-[5px] blogMenu">Blog <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></button>
+        <!-- <div class="dropdownSH w-[1081.2px] h-[397.6px] bg-amber-400 absolute top-[80px] left-[90px] hidden blog-dropdown"></div> -->
+
+        <button class="w-[112px] h-full font-medium flex justify-center items-center gap-[5px] PortfolioMenu">Portfolio <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></button>
+        <!-- <div class="dropdownSH w-[1200px] h-[397.6px] bg-emerald-500 absolute top-[80px] left-[90px] hidden Portfolio-dropdown"></div> -->
+
+        <button class="w-[93.4px] h-full font-medium flex justify-center items-center gap-[5px] pagesMenu">Pages <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></button>
+        <div class="dropdownSH w-full h-[405px] bg-[#fff] absolute top-[80px] left-0 pages-dropdown pt-[50px] pb-[50px] pr-[80px] pl-[80px] hidden">
+          <ul class="w-full h-[305px] flex">
+            <li class="title w-[234.34px] h-[305px] pr-[15px]">
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Pages</a>
+              <ul class="w-[204.34px] h-[240px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="about us.html">About Us</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">About Me</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Pricing Table</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Our Gift Vouchers</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">What We Do</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Faqs 1</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Faqs 2</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Our Team</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="title w-[234.34px] h-[305px] pr-[15px]">
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Contact Us</a>
+              <ul class="w-[204.34px] h-[90px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="contactus.html">Contact Us 1</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Contact Us 2</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Contact Us 3</a>
+                </li>
+              </ul>
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Web Pages</a>
+              <ul class="w-[204.34px] h-[120px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Error 404 1</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Error 404 2</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Coming Soon</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Under Construction</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="title w-[234.34px] h-[305px] pr-[15px]">
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Banner Style</a>
+              <ul class="w-[204.34px] h-[240px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner with BG Color</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner with Image</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner with Video</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner with Kanbern</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner Small</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner Medium</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner Large</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="title w-[234.34px] h-[305px] pr-[15px]">
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Header Style</a>
+              <ul class="w-[204.34px] h-[240px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 1</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 2</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 3</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 4</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 5</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 6</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 7</a>
+                </li>
+                <li class="w-full h-[40px] pt-[10px] pb-[10px] pr-[25px] pl-[25px0 mt-[10px] text-[15px] font-semibold text-center rounded-full borderAnimation border-[3px] border-solid border-[#000]">
+                  <a href="">Menu Styles</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="title w-[234.34px] h-[305px] pr-[15px]">
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Footer Style</a>
+              <ul class="w-[204.34px] h-[240px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 1</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 2</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 3</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 4</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 5</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 6</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 7</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="title w-[234.34px] h-[305px] pr-[15px]">
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Dashboard</a>
+              <ul class="w-[204.34px] h-[240px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Dashboard</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Orders</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Orders Details</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Orders Confirmation</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Downloads</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Return Request</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Return Request Detail</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Return Request Confirmed</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+
+        <button class="w-[175.4px] h-full font-medium flex justify-center items-center gap-[5px] MyAccountMenu">MyAccount <div class="w-[34px] h-[18px] bg-red-600 rounded-[50px] text-[10px] flex justify-center items-center text-[#fff]">NEW</div> <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></button>
+        <!-- <div class="dropdownSH w-[220px] h-[540px] bg-indigo-500 absolute top-[80px] left-[767px] hidden MyAccount-dropdown"></div> -->
+      </div>
+
+      <div class="w-[407.6px] h-full flex justify-center items-center max-sm:hidden">
+        <div class="w-full h-[30px]">
+          <ul class="w-[397.6px] h-[30px] flex justify-center items-center">
+            <li class="w-[117.6px] h-[18.8px] mr-[40px] flex justify-center items-center border-b-[1px] border-solid border-[#343434]"><a href="">Login / Register</a></li>
+            <li class="w-[50px] h-[20px] flex justify-center items-center"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-magnifier-50.png" alt=""></a></li>
+            <li class="w-[50px] h-[20px] flex justify-center items-center"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-heart-50.png" alt=""></a></li>
+            <li class="w-[50px] h-[20px] flex justify-center items-center relative"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-cart-32.png" alt=""> <div class="w-[18px] h-[18px] rounded-full bg-red-600 absolute top-0 right-0 flex justify-center items-center text-[10px] text-[#fff]">5</div></a></li>
+            <li class="w-[90px] h-[30px] burgerMenu max-sm:block">
+              <a class="w-[60px] h-[30px] ml-[30px] flex justify-center items-center" href="#"><img class="w-[30px] h-[30px]" src="assets/img/icons8-menu-50.png" alt=""></a>
+            </li>
+            <div class="w-full h-[100vh] bg-black absolute left-0 top-0 opacity-[.5] burgermenuShadow hidden"></div>
+            <div class="w-[485px] h-[100vh] bg-[#fff] absolute top-0 right-0 BM-card hidden">
+              <div class="w-[20px] h-[20px] ml-auto mt-[20px] mr-[10px] cursor-pointer close-BMenu"><img src="assets/img/icons8-close-50.png" alt=""></div>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </header>
 
 
 
-    <main class="mt-[80px] max-w-[1524.8px] m-auto">
-        <div class="max-w-[1524.8px] h-[57.6px] pt-[16px] pb-[16px] pr-[80px] pl-[80px]">
+    <main class="mt-[80px] max-w-[1524.8px] m-auto max-sm:mt-[60px]">
+        <div class="max-w-[1524.8px] h-[57.6px] pt-[16px] pb-[16px] pr-[80px] pl-[80px] max-sm:w-full max-sm:h-[54.4px] max-sm:pr-[15px] max-sm:pl-[15px]">
             <div class="w-[203.6px] h-[25.6px] flex">
                 <div class="w-[44.8px] h-[25.6px] mr-[3px] text-[16px] font-medium capitalize">home</div>
                 <div class="w-[144.8px] h-[25.6px] pl-[8px] text-[16px] font-medium capitalize flex">
@@ -97,15 +393,15 @@
             </div>
         </div>
 
-        <section class="max-w-[1524.8px] h-[637.6px] pr-[80px] pl-[80px] flex">
-            <div class="w-[464.93px] h-[637.6px] pr-[15px]">
+        <section class="max-w-[1524.8px] h-[637.6px] pr-[80px] pl-[80px] flex max-sm:w-full max-sm:h-[1606.26px] max-sm:flex-col max-sm:pr-[15px] max-sm:pl-[15px]">
+            <div class="w-[464.93px] h-[637.6px] pr-[15px] max-sm:w-full max-sm:h-[476.46px]">
                 <img id="lightgallery" class="rounded-[20px]" src="assets/img/13.png" alt="">
             </div>
-            <div class="w-[929.86px] h-full pl-[15px] flex relative">
-                <div class="w-[542.41px] h-full pr-[15px] pt-[20px]">
-                    <div class="w-full h-[106.8px] mb-[15px]">
-                        <span class="w-[105.6px] h-[22px] flex justify-center items-center text-[12px] font-semibold uppercase bg-[#000] rounded-[4px] text-[#fff]">SALE 20% Off</span>
-                        <h4 class="w-full h-[49px] mb-[4px] text-[35px] font-medium leading-[1.4]">Curly Girl Beautiful Dress</h4>
+            <div class="w-[929.86px] h-full pl-[15px] flex relative max-sm:w-full max-sm:h-[1129.8px] max-sm:flex-col max-sm:pl-0">
+                <div class="w-[542.41px] h-full pr-[15px] pt-[20px] max-sm:w-full max-sm:h-[630.4px] max-sm:pr-0 max-sm:pl-0">
+                    <div class="w-full h-[106.8px] mb-[15px] max-sm:h-[89px]">
+                        <span class="w-[105.6px] h-[22px] flex justify-center items-center text-[12px] font-semibold uppercase bg-[#000] rounded-[4px] text-[#fff] max-sm:mb-[8px]">SALE 20% Off</span>
+                        <h4 class="w-full h-[49px] mb-[4px] text-[35px] font-medium leading-[1.4] max-sm:h-[33.6px] max-sm:text-[24px]">Curly Girl Beautiful Dress</h4>
                         <div class="w-full h-[20px] flex items-center">
                             <ul class="w-[100px] h-full flex gap-[5px] mr-[8px]">
                                 <li class="w-[14.4px] h-full"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
@@ -118,9 +414,9 @@
                             <a href="" class="w-[124.8px] h-full text-[13px]">(5 customer reviews)</a>
                         </div>
                     </div>
-                    <p class="w-[512.41px] h-[96px] mb-[36px] text-[16px] font-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <div class="w-[512.41px] h-[76.4px] mb-[40px] flex">
-                        <div class="w-[140px] h-full mr-[45px]">
+                    <p class="w-[512.41px] h-[96px] mb-[36px] text-[16px] font-normal max-sm:w-full max-sm:h-[134.4px] max-sm:text-[14px] max-sm:mb-[16px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div class="w-[512.41px] h-[76.4px] mb-[40px] flex max-sm:w-full max-sm:h-[160.2px] max-sm:flex-wrap">
+                        <div class="w-[140px] h-full mr-[45px] max-sm:w-full max-sm:h-[70px] max-sm:mb-[20px]">
                             <label class="w-[68px] h-[25.6px] text-[16px] font-bold">Quantity</label>
                             <div class="w-full h-[40px] mt-[10px]">
                                 <button onclick="moveNumberDown()" class="w-[40px] h-[40px] rounded-full bg-[#000] mr-[5px]"><i class="fa-solid fa-minus" style="color: #ffffff;"></i></button>
@@ -131,7 +427,7 @@
                             </div>
                         </div>
 
-                        <div class="w-[132px] h-full mr-[45px]">
+                        <div class="w-[132px] h-full mr-[45px] max-sm:h-[80px]">
                             <label class="w-[68px] h-[25.6px] text-[16px] font-bold">Size</label>
                             <div class="w-full h-[39px] flex justify-between mt-[10px]">
                                 <div id="card1" class="w-[34px] h-[34px] rounded-full border-[1px] border-solid border-[#000] cursor-pointer text-center product-active">S</div>
@@ -140,7 +436,7 @@
                             </div>
                         </div>
 
-                        <div class="w-[124px] h-full">
+                        <div class="w-[124px] h-full max-sm:h-[80px]">
                           <label class="w-[68px] h-[25.6px] text-[16px] font-bold">Color</label>
                           <div class="w-full h-[31px] flex gap-[1px]">
                             <div id="colorItem1" class="w-[28px] h-[28px] mt-[15px] rounded-full flex justify-center items-center cursor-pointer borderActive">
@@ -162,26 +458,26 @@
                         </div>
                     </div>
 
-                    <div class="w-[512.41px] h-[148.4px] mb-[40px] pt-[20px] border-t-[1px] border-solid border-[#D7D7D7]">
+                    <div class="w-[512.41px] h-[148.4px] mb-[40px] pt-[20px] border-t-[1px] border-solid border-[#D7D7D7] max-sm:w-full max-sm:h-[170.8px]">
                       <ul class="w-full h-[24px] mb-[10px] flex">
                         <li class="w-[33.6px] h-full mr-[10px] text-[14px] font-bold">SKU:</li>
                         <li class="w-[85.6px] h-full text-[14px] font-medium">PRT584E63A</li>
                       </ul>
-                      <ul class="w-full h-[24px] mb-[10px] flex transition-all">
-                        <li class="w-[72.8px] h-[24px] mr-[10px] text-[14px] font-bold">Category:</li>
-                        <li class="w-[55.2px] h-full mr-[10px] text-[14px] font-medium">
+                      <ul class="w-full h-[24px] mb-[10px] flex transition-all max-sm:h-[46.4px] max-sm:flex-wrap">
+                        <li class="w-[72.8px] h-[24px] mr-[10px] text-[14px] font-bold max-sm:h-[24px]">Category:</li>
+                        <li class="w-[55.2px] h-full mr-[10px] text-[14px] font-medium max-sm:h-[22.4px]">
                           <a href="" class="hover:text-[#CC0D39]">Dresses,</a>
                         </li>
-                        <li class="w-[40.8px] h-full mr-[10px] text-[14px] font-medium">
+                        <li class="w-[40.8px] h-full mr-[10px] text-[14px] font-medium max-sm:h-[22.4px]">
                           <a href="" class="hover:text-[#CC0D39]">Jeans,</a>
                         </li>
-                        <li class="w-[69.6px] h-full mr-[10px] text-[14px] font-medium">
+                        <li class="w-[69.6px] h-full mr-[10px] text-[14px] font-medium max-sm:h-[22.4px]">
                           <a href="" class="hover:text-[#CC0D39]">Swimwear,</a>
                         </li>
-                        <li class="w-[56.8px] h-full mr-[10px] text-[14px] font-medium">
+                        <li class="w-[56.8px] h-full mr-[10px] text-[14px] font-medium max-sm:h-[22.4px]">
                           <a href="" class="hover:text-[#CC0D39]">Summer,</a>
                         </li>
-                        <li class="w-[57.6px] h-full mr-[10px] text-[14px] font-medium">
+                        <li class="w-[57.6px] h-full mr-[10px] text-[14px] font-medium max-sm:h-[22.4px]">
                           <a href="" class="hover:text-[#CC0D39]">Clothing,</a>
                         </li>
                       </ul>
@@ -220,11 +516,11 @@
                     </div>
                     
                 </div>
-                <div class="w-[387.44px] h-[637.6px] pl-[15px]">
-                  <div class="w-[357.44px] h-full rounded-[30px] border-[1px] border-solid border-[#000] pt-[35px] pb-[35px] pr-[30px] pl-[30px]">
-                    <div class="w-[295.84px] h-[44.8px] mb-[20px] rounded-[10px] border-[1px] border-solid border-[#000] pt-[12px] pb-[12px] pr-[30px] pl-[30px] text-center text-[16px] font-bold leading-[1.2] capitalize hover:bg-[#000] hover:text-[#fff] transition-all"><a href="">Bank Offer 5% Cashback</a></div>
+                <div class="w-[387.44px] h-[637.6px] pl-[15px] max-sm:w-full max-sm:h-[499.4px] max-sm:pl-0 max-sm:mt-[40px]">
+                  <div class="w-[357.44px] h-full rounded-[30px] border-[1px] border-solid border-[#000] pt-[35px] pb-[35px] pr-[30px] pl-[30px] max-sm:w-full max-sm:p-[15px]">
+                    <div class="w-[295.84px] h-[44.8px] mb-[20px] rounded-[10px] border-[1px] border-solid border-[#000] pt-[12px] pb-[12px] pr-[30px] pl-[30px] text-center text-[16px] font-bold leading-[1.2] capitalize hover:bg-[#000] hover:text-[#fff] transition-all max-sm:w-full"><a href="">Bank Offer 5% Cashback</a></div>
 
-                    <div class="w-full h-[97.6px] mb-[15px] pt-[20px] pb-[20px] pr-[25px] pl-[25px] border-[1px] border-solid border-[#000] rounded-[10px] flex">
+                    <div class="w-full h-[97.6px] mb-[15px] pt-[20px] pb-[20px] pr-[25px] pl-[25px] border-[1px] border-solid border-[#000] rounded-[10px] flex max-sm:h-[81.6px]">
                       <div class="w-[50px] h-[50px]"></div>
                       <div class="w-[85.6px] h-[56px] ml-[20px]">
                         <span class="w-full h-[17.6px] text-[14px]">Easy Returns</span>
@@ -232,26 +528,26 @@
                       </div>
                     </div>
 
-                    <div class="w-full h-[139.2px] mb-[30px] pt-[20px] pb-[20px] pr-[25px] pl-[25px] rounded-[10px] border-[1px] border-solid border-[#000] flex justify-between items-center">
+                    <div class="w-full h-[139.2px] mb-[30px] pt-[20px] pb-[20px] pr-[25px] pl-[25px] rounded-[10px] border-[1px] border-solid border-[#000] flex justify-between items-center max-sm:h-[81.6px]">
                       <div class="w-[50px] h-[50px]"></div>
-                      <div class="w-[174.24px] h-[97.6px]">
+                      <div class="w-[174.24px] h-[97.6px] max-sm:flex max-sm:items-center">
                         <h6 class="w-full h-[22.4px] mb-[0.5rem] text-[1rem] font-bold leading-[1.4]">Enjoy The Product</h6>
-                        <p class="w-full h-[67.2px] text-[14px] font-light">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                        <p class="w-full h-[67.2px] text-[14px] font-light max-sm:hidden">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
                       </div>
                     </div>
 
-                    <div class="w-full h-[36.4px] pb-[10px] border-b-[1px] border-solid border-[#D7D7D7] flex">
+                    <div class="w-full h-[36.4px] pb-[10px] border-b-[1px] border-solid border-[#D7D7D7] flex max-sm:h-[33.2px]">
                       <div class="w-[20px] h-[20px]"></div>
                       <span class="w-[241.6px] h-[25.6px] ml-[10px] text-[16px] font-medium">You will save ₹504 on this order</span>
                     </div>
 
-                    <table class="w-full h-[73.4px]">
+                    <table class="w-full h-[73.4px] max-sm:h-[52px]">
                       <tbody>
                         <tr>
                           <td class="w-[95.94px] h-full pt-[15px] pb-[20px] flex justify-center items-center">
                             <h6 class="w-full h-[22.4] text-[1rem] font-semibold leading-[1.4]">Total</h6>
                           </td>
-                          <td class="w-[199.9px] h-full text-[24px] font-medium text-end">$125.75</td>
+                          <td class="w-[199.9px] h-full text-[24px] font-medium text-end max-sm:text-[20px]">$125.75</td>
                         </tr>
                       </tbody>
                     </table>
@@ -267,7 +563,7 @@
                     
                   </div>
                 </div>
-                <div class="w-[25.6px] h-[376.8px] absolute right-0 bottom-[10px]">
+                <div class="w-[25.6px] h-[376.8px] absolute right-0 bottom-[10px] max-sm:hidden">
                   <ul class="w-full h-full">
                     <li class="w-full h-[136.6px] pt-[20px] pb-[20px] text-[14px] font-semibold tracking-[0.1em] uppercase rotate-90">
                       <a href="https://www.instagram.com/dexignzone/">Instagram</a>
@@ -283,8 +579,8 @@
             </div>
         </section>
 
-        <section class="max-w-[1524.8px] pt-[70px]">
-          <div class="w-[1320px] m-auto pr-[15px] pl-[15px]">
+        <section class="max-w-[1524.8px] pt-[70px] max-sm:w-full max-sm:h-[1102.45px] max-sm:pt-[50px]">
+          <div class="w-[1320px] m-auto pr-[15px] pl-[15px] max-sm:w-full">
             <ul class="w-full h-[47px] flex justify-center items-center border-b-[1px] border-solid border-[#D7D7D7]">
               <li class="btn1 w-[127.2px] h-full pt-[10px] pb-[10px] pr-[20px] pl-[20px] btn-border">
                 <button class="text-[16px] font-medium">Description</button>
@@ -293,72 +589,73 @@
                 <button class="text-[16px] font-medium">Reviews (12)</button>
               </li>
             </ul>
-            <div class="w-full pt-[50px]">
+            <div class="w-full pt-[50px] max-sm:pt-[20px]">
               <div class="w-full h-[793.36px] container1">
-                <div class="w-full h-[303.6px] pr-[30px] pl-[30px]">
+                <div class="w-full h-[303.6px] pr-[30px] pl-[30px] max-sm:pr-0 max-sm:pl-0">
                   <h5 class="w-full h-[25.2px] mb-[8px] text-[1.125rem] font-semibold leading-[1.4] text-center">Flawless Denim Delights</h5>
-                  <p class="w-[1230px] h-[102.4px] mb-[40px] font-medium text-[1rem] leading-[1.6] text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  <ul class="w-full h-[128px] mb-[60px] flex flex-wrap items-center">
-                    <li class="w-[452.4px] h-[64px] pt-[10px] pb-[10px] pr-[40px] flex justify-center items-center">
-                      <svg class="w-[44px] h-[44px] mr-[10px]" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg>
-                      <h5 class="w-[358.4px] h-[25.2px] text-[1.125rem] font-medium leading-[1.4]">Versatile, enduring style for all occasions</h5>
+                  <p class="w-[1230px] h-[102.4px] mb-[40px] font-medium text-[1rem] leading-[1.6] text-center max-sm:w-full max-sm:h-[268.8px] max-sm:mb-[20px] max-sm:text-[14px] max-sm:text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                  <ul class="w-full h-[128px] mb-[60px] flex flex-wrap items-center max-sm:h-[168px] max-sm:mb-[15px]">
+                    <li class="w-[452.4px] h-[64px] pt-[10px] pb-[10px] pr-[40px] flex justify-center items-center max-sm:w-full max-sm:h-[56px]">
+                      <svg class="w-[44px] h-[44px] mr-[10px]" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><path fill="#000000" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg>
+                      <h5 class="w-[358.4px] h-[25.2px] text-[1.125rem] font-medium leading-[1.4] max-sm:text-[14px]">Versatile, enduring style for all occasions</h5>
                     </li>
-                    <li class="w-[378.8px] h-[64px] pt-[10px] pb-[10px] pr-[40px] flex justify-center items-center">
-                      <svg class="w-[44px] h-[44px] mr-[10px]" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg>
-                      <h5 class="w-[284.8px] h-[25.2px] text-[1.125rem] font-medium leading-[1.4]">Handcrafted Elegance, Comfort</h5>
+                    <li class="w-[378.8px] h-[64px] pt-[10px] pb-[10px] pr-[40px] flex justify-center items-center max-sm:w-full max-sm:h-[56px]">
+                      <svg class="w-[44px] h-[44px] mr-[10px]" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><path fill="#000000" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg>
+                      <h5 class="w-[284.8px] h-[25.2px] text-[1.125rem] font-medium leading-[1.4] max-sm:text-[14px]">Handcrafted Elegance, Comfort</h5>
                     </li>
-                    <li class="w-[452.4px] h-[64px] pt-[10px] pb-[10px] pr-[40px] flex justify-center items-center">
-                      <svg class="w-[44px] h-[44px] mr-[10px]" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg>
-                      <h5 class="w-[358.4px] h-[25.2px] text-[1.125rem] font-medium leading-[1.4]">Versatile, enduring style for all occasions</h5>
+                    <li class="w-[452.4px] h-[64px] pt-[10px] pb-[10px] pr-[40px] flex justify-center items-center max-sm:w-full max-sm:h-[56px]">
+                      <svg class="w-[44px] h-[44px] mr-[10px]" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><path fill="#000000" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg>
+                      <h5 class="w-[358.4px] h-[25.2px] text-[1.125rem] font-medium leading-[1.4] max-sm:text-[14px]">Versatile, enduring style for all occasions</h5>
                     </li>
                   </ul>
                 </div>
-                <div class="w-full h-[403.76px] flex">
-                  <div class="w-[473.99px] h-[379.76px] mt-[24px] pr-[12px] pl-[12px]">
+                <div class="w-full h-[403.76px] flex max-sm:w-full max-sm:h-[499.65px] max-sm:flex-wrap max-sm:mt-[180px]">
+                  <div class="w-[473.99px] h-[379.76px] mt-[24px] pr-[12px] pl-[12px] max-sm:w-[164.6px] max-sm:h-[150.99px] max-sm:pl-[8px] max-sm:pr-[8px]">
                     <img class="rounded-[30px] w-full h-full" src="assets/img/pro1.png" alt="">
                   </div>
-                  <div class="w-[473.99px] h-[379.76px] mt-[24px] pr-[12px] pl-[12px]">
+                  <div class="w-[473.99px] h-[379.76px] mt-[24px] pr-[12px] pl-[12px] max-sm:w-[164.6px] max-sm:h-[150.99px] max-sm:pl-[8px] max-sm:pr-0">
                     <img class="rounded-[30px] w-full h-full" src="assets/img/pro2.png" alt="">
                   </div>
-                  <div class="w-[473.99px] h-[379.76px] mt-[24px] pr-[12px] pl-[12px]">
+                  <div class="w-[473.99px] h-[379.76px] mt-[24px] pr-[12px] pl-[12px] max-sm:w-full max-sm:h-[316.66px] max-sm:mt-[16px] max-sm:pr-[8px] max-sm:pl-[8px]">
                     <img class="rounded-[30px] w-full h-full" src="assets/img/pro3.png" alt="">
                   </div>
                 </div>
               </div>
-              <div class="w-full h-[973px] hidden container2">
+              <div class="w-full h-[973px] hidden container2 max-sm:h-[1482.2px]">
                 <h2 class="w-full h-[25.2px] mb-[0.5rem] text-[1.125rem] font-semibold leading-[1.4]">Comments (02)</h2>
-                <p class="w-full h-[22.4px] text-[14px] font-normal mb-[30px]">There are many variations of passages of Lorem Ipsum available.</p>
-                <div class="w-[1290px] h-[405px] mb-[60px]">
+                <p class="w-full h-[22.4px] text-[14px] font-normal mb-[30px] max-sm:w-full max-sm:h-[44.8px]">There are many variations of passages of Lorem Ipsum available.</p>
+                <div class="w-[1290px] h-[405px] mb-[60px] max-sm:w-full max-sm:h-[82.6px]">
                   <ol class="w-full h-full">
-                    <li class="w-full h-[260px] mb-[30px]">
-                      <div class="w-full h-[115px] mb-[30px] pt-[2px] pl-[100px] pb-[30px] relative border-b-[1px] border-solid border-[#0000001a]">
+                    <li class="w-full h-[260px] mb-[30px] max-sm:h-[538.4px] max-sm:mb-0">
+                      <div class="w-full h-[115px] mb-[30px] pt-[2px] pl-[100px] pb-[30px] relative border-b-[1px] border-solid border-[#0000001a] max-sm:h-[254.2px]">
                         <div class="w-full h-[21px] relative mb-[10px]">
                           <img class="w-[85px] h-[85px] rounded-full absolute left-[-100px]" src="assets/img/profile4.jpg" alt="">
                           <cite class="w-full h-[21px] text-[16px] leading-[21px] font-semibold not-italic">Michel Poe</cite>
                         </div>
 
                         <div class="w-full h-[47.6px]">
-                          <p class="text-[14px] text-[#666666] font-medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                          <p class="text-[14px] text-[#666666] font-medium max-sm:leading-[23px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
 
                         <div class="w-[54.4px] h-[21.6px] bg-black rounded-[4px] absolute top-0 right-0 flex justify-center items-center cursor-pointer">
                           <a class="text-[12px] font-medium leading-[1.3] text-[#fff]" href="">Reply</a>
                         </div>
                       </div>
-                      <ol class="w-[1240px] h-[115px] ml-auto border-b-[1px] border-solid border-[#0000001a] pt-[2px] pl-[100px] pb-[30px] relative">
+                      <ol class="w-[1240px] h-[115px] ml-auto border-b-[1px] border-solid border-[#0000001a] pt-[2px] pl-[100px] pb-[30px] relative max-sm:w-full max-sm:h-[254.2px]">
                         <div class="w-full h-[21px] relative mb-[10px]">
                           <img class="w-[85px] h-[85px] rounded-full absolute left-[-100px]" src="assets/img/profile3.jpg" alt="">
                           <cite class="w-full h-[21px] text-[16px] leading-[21px] font-semibold not-italic">Celesto Anderson</cite>
                         </div>
                         <div class="w-full h-[47.6px]">
-                          <p class="text-[14px] text-[#666666] font-medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                          <p class="text-[14px] text-[#666666] font-medium max-sm:leading-[23px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
                         <div class="w-[54.4px] h-[21.6px] bg-black rounded-[4px] absolute top-0 right-0 flex justify-center items-center cursor-pointer">
                           <a class="text-[12px] font-medium leading-[1.3] text-[#fff]" href="">Reply</a>
                         </div>
                       </ol>
                     </li>
-                    <li class="w-full h-[115px]">
+                    <li class="w-full h-[115px] max-sm:h-[254.2px]">
                       <div class="w-full h-[115px] mb-[30px] pt-[2px] pl-[100px] pb-[30px] relative border-b-[1px] border-solid border-[#0000001a]">
                         <div class="w-full h-[21px] relative mb-[10px]">
                           <img class="w-[85px] h-[85px] rounded-full absolute left-[-100px]" src="assets/img/profile2.jpg" alt="">
@@ -366,7 +663,7 @@
                         </div>
 
                         <div class="w-full h-[47.6px]">
-                          <p class="text-[14px] text-[#666666] font-medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                          <p class="text-[14px] text-[#666666] font-medium max-sm:leading-[23px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
 
                         <div class="w-[54.4px] h-[21.6px] bg-black rounded-[4px] absolute top-0 right-0 flex justify-center items-center cursor-pointer">
@@ -376,7 +673,7 @@
                     </li>
                   </ol>
                 </div>
-                <div class="w-full h-[423.2px]">
+                <!-- <div class="w-full h-[423.2px] max-sm:h-[511.6px]">
                   <h4 class="w-full h-[25.2px] mb-[8px] text-[1.125rem] font-semibold leading-[1.4]">Good Comments</h4>
                   <p class="w-full h-[22.4px] mb-[30px] text-[14px] font-normal">There are many variations of passages of Lorem Ipsum available.</p>
                   <div class="w-full h-[45.6px] flex">
@@ -407,17 +704,17 @@
                       </p>
                     </form>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
         </section>
 
-        <section class="max-w-[1524.8px] h-[778.4px] pt-[100px] pb-[100px]">
-          <div class="w-[1320px] h-[578.4px] m-auto pr-[15px] pl-[15px]">
-            <div class="w-full h-[48px] mb-[40px] flex justify-between items-center">
+        <section class="max-w-[1524.8px] h-[778.4px] pt-[100px] pb-[100px] max-sm:w-full max-sm:h-[644.6px] max-sm:pt-[40px] max-sm:pb-[40px]">
+          <div class="w-[1320px] h-[578.4px] m-auto pr-[15px] pl-[15px] max-sm:w-full max-sm:h-[564.4px]">
+            <div class="w-full h-[48px] mb-[40px] flex justify-between items-center max-sm:h-[46.4px] max-sm:mb-[20px] max-sm:flex-col max-sm:items-start">
               <div class="w-[328px] h-[48px]">
-                <h2 class="text-[40px] font-semibold capitalize leading-[1.2]">Related products</h2>
+                <h2 class="text-[40px] font-semibold capitalize leading-[1.2] max-sm:text-[20px]">Related products</h2>
               </div>
               <a class="w-[133.6px] h-[22.4px] text-[14px] font-medium capitalize flex justify-between" href="">
                 See all products

@@ -25,60 +25,356 @@
 
   <button id="scrollToTopBtn"></button>
 
-    <header class="navbar w-full h-[80px] flex justify-center items-center border-b-[1px] border-solid border-[#efefef] z-[10] absolute top-0 max-sm:h-[65px] max-sm:pl-[15px] max-sm:pr-[15px]">
-      <div class="w-[90%] h-full flex max-sm:w-full">
-        <div class="w-[13.1%] h-full mr-[50px] flex justify-center items-center max-sm:w-[180px] max-sm:h-[65px] max-sm:mr-0 max-sm:justify-normal max-sm:items-start max-sm:mt-[10px]"><a href=""><img class="max-sm:w-full max-sm:h-full" src="assets/img/logo.svg" alt=""></a></div>
-        <div onclick="openNav()" class="sm:hidden w-[45px] h-[45px] bg-[#000] ml-auto mt-auto mb-auto p-[5px] res-burgerM"><img class="w-f h-full" src="assets/img/icons8-circled-menu-24.png" alt=""></div>
+  <header class="navbar w-full h-[80px] flex justify-center items-center border-b-[1px] border-solid border-[#efefef] z-[10] absolute top-0 max-sm:h-[65px] max-sm:pl-[15px] max-sm:pr-[15px] bg-[#fff]">
+    <div class="w-[90%] h-full flex max-sm:w-full">
+      <div class="w-[13.1%] h-full mr-[50px] flex justify-center items-center max-sm:w-[180px] max-sm:h-[65px] max-sm:mr-0 max-sm:justify-normal max-sm:items-start max-sm:mt-[10px]"><a href=""><img class="max-sm:w-full max-sm:h-full" src="assets/img/logo.svg" alt=""></a></div>
+      <div onclick="openNav()" class="sm:hidden w-[45px] h-[45px] bg-[#000] ml-auto mt-auto mb-auto p-[5px] res-burgerM"><img class="w-f h-full" src="assets/img/icons8-circled-menu-24.png" alt=""></div>
 
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
-        </div>
-
-        <div class="w-[52.8%] h-full flex max-sm:hidden">
-          <a class="w-[12.5%] h-full font-medium flex justify-center items-center gap-[5px] homeMenu" href="">Home <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
-          <div class="w-[820px] h-[397.6px] bg-yellow-300 absolute top-[80px] hidden home-dropdown"></div>
-
-          <a class="w-[86.2px] h-full flex justify-center items-center font-medium gap-[5px] shopMenu" href="shop.html">Shop <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
-          <div class="w-[1140px] h-[397.6px] bg-lime-400 absolute top-[80px] left-[90px] hidden shop-dropdown"></div>
-
-          <a class="w-[80px] h-full font-medium flex justify-center items-center gap-[5px] blogMenu" href="">Blog <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
-          <div class="w-[1081.2px] h-[397.6px] bg-amber-400 absolute top-[80px] left-[90px] hidden blog-dropdown"></div>
-
-          <a class="w-[112px] h-full font-medium flex justify-center items-center gap-[5px] PortfolioMenu" href="">Portfolio <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
-          <div class="w-[1200px] h-[397.6px] bg-emerald-500 absolute top-[80px] left-[90px] hidden Portfolio-dropdown"></div>
-
-          <a class="w-[93.4px] h-full font-medium flex justify-center items-center gap-[5px] pagesMenu" href="about us.html">Pages <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
-          <div class="w-full h-[397.6px] bg-teal-300 absolute top-[80px] left-0 hidden
-           pages-dropdown"></div>
-
-          <a class="w-[175.4px] h-full font-medium flex justify-center items-center gap-[5px] MyAccountMenu" href="">MyAccount <div class="w-[34px] h-[18px] bg-red-600 rounded-[50px] text-[10px] flex justify-center items-center text-[#fff]">NEW</div> <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
-          <div class="w-[220px] h-[540px] bg-indigo-500 absolute top-[80px] left-[767px] hidden MyAccount-dropdown"></div>
-        </div>
-
-        <div class="w-[407.6px] h-full flex justify-center items-center max-sm:hidden">
-          <div class="w-full h-[30px]">
-            <ul class="w-[397.6px] h-[30px] flex justify-center items-center">
-              <li class="w-[117.6px] h-[18.8px] mr-[40px] flex justify-center items-center border-b-[1px] border-solid border-[#343434]"><a href="">Login / Register</a></li>
-              <li class="w-[50px] h-[20px] flex justify-center items-center"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-magnifier-50.png" alt=""></a></li>
-              <li class="w-[50px] h-[20px] flex justify-center items-center"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-heart-50.png" alt=""></a></li>
-              <li class="w-[50px] h-[20px] flex justify-center items-center relative"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-cart-32.png" alt=""> <div class="w-[18px] h-[18px] rounded-full bg-red-600 absolute top-0 right-0 flex justify-center items-center text-[10px] text-[#fff]">5</div></a></li>
-              <li class="w-[90px] h-[30px] burgerMenu max-sm:block">
-                <a class="w-[60px] h-[30px] ml-[30px] flex justify-center items-center" href="#"><img class="w-[30px] h-[30px]" src="assets/img/icons8-menu-50.png" alt=""></a>
-              </li>
-              <div class="w-full h-[100vh] bg-black absolute left-0 top-0 opacity-[.5] burgermenuShadow hidden"></div>
-              <div class="w-[485px] h-[100vh] bg-[#fff] absolute top-0 right-0 BM-card hidden">
-                <div class="w-[20px] h-[20px] ml-auto mt-[20px] mr-[10px] cursor-pointer close-BMenu"><img src="assets/img/icons8-close-50.png" alt=""></div>
-              </div>
-            </ul>
-          </div>
-        </div>
-
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
       </div>
-    </header>
+
+      <div class="w-[52.8%] h-full flex max-sm:hidden">
+        <a class="w-[12.5%] h-full font-medium flex justify-center items-center gap-[5px] homeMenu" href="index.html">Home <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></a>
+        <!-- <div class="dropdownSH w-[820px] h-[397.6px] bg-yellow-300 absolute top-[80px] hidden home-dropdown"></div> -->
+
+        <button class="w-[86.2px] h-full flex justify-center items-center font-medium gap-[5px] shopMenu">Shop <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></button>
+        <div class="dropdownSH w-[1140px] h-[529.4px] bg-[#fff] absolute top-[80px] left-[90px] hidden shop-dropdown p-[50px]">
+          <ul class="w-full h-[439.8px] flex">
+            <li class="w-[706.2px] h-full pr-[15px]">
+              <ul class="w-full h-full flex flex-wrap">
+
+                <li class="title w-[225.38px] h-[255px]">
+                  <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Shop Structure</a>
+                  <ul class="w-full h-[210px]">
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="shop.html">Shop Structure</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Shop List</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Shop With Category</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Shop Filters Top Bar</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Shop Sidebar</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Shop Style 1</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Shop Style 2</a>
+                    </li>
+                  </ul>
+                </li>
+
+
+                <li class="title w-[225.38px] h-[255px]">
+                  <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Product Structure</a>
+                  <ul class="w-full h-[210px]">
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="product.html">Default</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Thumbnail</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Grid Media</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Carousel</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Full Width</a>
+                    </li>
+                  </ul>
+                </li>
+
+
+                <li class="title w-[225.38px] h-[255px]">
+                  <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Shop Pages</a>
+                  <ul class="w-full h-[210px]">
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Wishlist</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Cart</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Checkout</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Compare</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Order Tracking</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Login</a>
+                    </li>
+                    <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                      <a href="">Registration</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="w-[676.2px] h-[144.8px] mt-[25px] p-[15px] flex justify-center items-center border-[1px] border-solid border-[#eee]">
+                  <div class="w-[379px] h-[113.2px] mr-[16px]">
+                    <h3 class="w-full h-[33.6px] text-[1.5rem] leading-[1.4] font-semibold mb-[8px]">Deal of the month</h3>
+                    <p class="w-full h-[71.6px] text-[13px] text-[#5E626F] font-light">
+                      Yes! Send me exclusive offers, personalised, and unique gift ideas, tips for shopping on Pixio 
+                      <br>
+                      <a href="" class="w-full h-[39px] pt-[5px] pb-[5px] text-[14px] text-[#5E626F] leading-[20px] font-normal capitalize">View All Products</a>
+                    </p>
+                  </div>
+                  <div class="w-[249.6px] h-[73.2px] flex">
+                    <div class="w-[50px] h-[73.2px] mr-[5px] ml-[5px]">
+                      <div class="w-[50px] h-[50px] mb-[4px] text-[22px] font-medium leading-[50px] bg-[#eee] text-center">31</div>
+                      <div class="w-full h-[16px] text-[12px] font-normal uppercase text-center">Days</div>
+                    </div>
+                    <div class="w-[50px] h-[73.2px] mr-[5px] ml-[5px]">
+                      <div class="w-[50px] h-[50px] mb-[4px] text-[22px] font-medium leading-[50px] bg-[#eee] text-center">12</div>
+                      <div class="w-full h-[16px] text-[12px] font-normal uppercase text-center">hours</div>
+                    </div>
+                    <div class="w-[50px] h-[73.2px] mr-[5px] ml-[5px]">
+                      <div class="w-[50px] h-[50px] mb-[4px] text-[22px] font-medium leading-[50px] bg-[#eee] text-center">11</div>
+                      <div class="w-full h-[16px] text-[12px] font-normal uppercase text-center">minutess</div>
+                    </div>
+                    <div class="w-[50px] h-[73.2px] mr-[5px] ml-[5px]">
+                      <div class="w-[50px] h-[50px] mb-[4px] text-[22px] font-medium leading-[50px] bg-[#eee] text-center">5</div>
+                      <div class="w-full h-[16px] text-[12px] font-normal uppercase text-center">second</div>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="w-[368.8px] h-[439.8px] pl-[15px]">
+              <div class="w-full h-full pl-[20px]">
+                <img src="assets/img/1 (1).png" class="rounded-[20px] w-full h-full" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button class="w-[80px] h-full font-medium flex justify-center items-center gap-[5px] blogMenu">Blog <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></button>
+        <!-- <div class="dropdownSH w-[1081.2px] h-[397.6px] bg-amber-400 absolute top-[80px] left-[90px] hidden blog-dropdown"></div> -->
+
+        <button class="w-[112px] h-full font-medium flex justify-center items-center gap-[5px] PortfolioMenu">Portfolio <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></button>
+        <!-- <div class="dropdownSH w-[1200px] h-[397.6px] bg-emerald-500 absolute top-[80px] left-[90px] hidden Portfolio-dropdown"></div> -->
+
+        <button class="w-[93.4px] h-full font-medium flex justify-center items-center gap-[5px] pagesMenu">Pages <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></button>
+        <div class="dropdownSH w-full h-[405px] bg-[#fff] absolute top-[80px] left-0 pages-dropdown pt-[50px] pb-[50px] pr-[80px] pl-[80px] hidden">
+          <ul class="w-full h-[305px] flex">
+            <li class="title w-[234.34px] h-[305px] pr-[15px]">
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Pages</a>
+              <ul class="w-[204.34px] h-[240px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="about us.html">About Us</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">About Me</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Pricing Table</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Our Gift Vouchers</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">What We Do</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Faqs 1</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Faqs 2</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Our Team</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="title w-[234.34px] h-[305px] pr-[15px]">
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Contact Us</a>
+              <ul class="w-[204.34px] h-[90px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="contactus.html">Contact Us 1</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Contact Us 2</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Contact Us 3</a>
+                </li>
+              </ul>
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Web Pages</a>
+              <ul class="w-[204.34px] h-[120px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Error 404 1</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Error 404 2</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Coming Soon</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Under Construction</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="title w-[234.34px] h-[305px] pr-[15px]">
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Banner Style</a>
+              <ul class="w-[204.34px] h-[240px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner with BG Color</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner with Image</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner with Video</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner with Kanbern</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner Small</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner Medium</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Banner Large</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="title w-[234.34px] h-[305px] pr-[15px]">
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Header Style</a>
+              <ul class="w-[204.34px] h-[240px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 1</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 2</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 3</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 4</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 5</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 6</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Header Style 7</a>
+                </li>
+                <li class="w-full h-[40px] pt-[10px] pb-[10px] pr-[25px] pl-[25px0 mt-[10px] text-[15px] font-semibold text-center rounded-full borderAnimation border-[3px] border-solid border-[#000]">
+                  <a href="">Menu Styles</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="title w-[234.34px] h-[305px] pr-[15px]">
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Footer Style</a>
+              <ul class="w-[204.34px] h-[240px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 1</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 2</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 3</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 4</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 5</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 6</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Footer Style 7</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="title w-[234.34px] h-[305px] pr-[15px]">
+              <a href="" class="w-full h-[30px] pb-[10px] text-[16px] font-bold leading-[20px]">Dashboard</a>
+              <ul class="w-[204.34px] h-[240px] mb-[15px]">
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Dashboard</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Orders</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Orders Details</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Orders Confirmation</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Downloads</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Return Request</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Return Request Detail</a>
+                </li>
+                <li class="cursor-pointer w-full h-[30px] text-[14px] text-[#5E626F] capitalize leading-[20px] pt-[5px] pb-[5px]">
+                  <a href="">Return Request Confirmed</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+
+        <button class="w-[175.4px] h-full font-medium flex justify-center items-center gap-[5px] MyAccountMenu">MyAccount <div class="w-[34px] h-[18px] bg-red-600 rounded-[50px] text-[10px] flex justify-center items-center text-[#fff]">NEW</div> <img class="w-[12px] h-[12px]" src="assets/img/icons8-star-30.png" alt=""></button>
+        <!-- <div class="dropdownSH w-[220px] h-[540px] bg-indigo-500 absolute top-[80px] left-[767px] hidden MyAccount-dropdown"></div> -->
+      </div>
+
+      <div class="w-[407.6px] h-full flex justify-center items-center max-sm:hidden">
+        <div class="w-full h-[30px]">
+          <ul class="w-[397.6px] h-[30px] flex justify-center items-center">
+            <li class="w-[117.6px] h-[18.8px] mr-[40px] flex justify-center items-center border-b-[1px] border-solid border-[#343434]"><a href="">Login / Register</a></li>
+            <li class="w-[50px] h-[20px] flex justify-center items-center"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-magnifier-50.png" alt=""></a></li>
+            <li class="w-[50px] h-[20px] flex justify-center items-center"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-heart-50.png" alt=""></a></li>
+            <li class="w-[50px] h-[20px] flex justify-center items-center relative"><a href=""><img class="w-[20px] h-[20px]" src="assets/img/icons8-cart-32.png" alt=""> <div class="w-[18px] h-[18px] rounded-full bg-red-600 absolute top-0 right-0 flex justify-center items-center text-[10px] text-[#fff]">5</div></a></li>
+            <li class="w-[90px] h-[30px] burgerMenu max-sm:block">
+              <a class="w-[60px] h-[30px] ml-[30px] flex justify-center items-center" href="#"><img class="w-[30px] h-[30px]" src="assets/img/icons8-menu-50.png" alt=""></a>
+            </li>
+            <div class="w-full h-[100vh] bg-black absolute left-0 top-0 opacity-[.5] burgermenuShadow hidden"></div>
+            <div class="w-[485px] h-[100vh] bg-[#fff] absolute top-0 right-0 BM-card hidden">
+              <div class="w-[20px] h-[20px] ml-auto mt-[20px] mr-[10px] cursor-pointer close-BMenu"><img src="assets/img/icons8-close-50.png" alt=""></div>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </header>
 
     <main class="relative">
       <section class="w-[85%] h-[890px] m-auto flex mt-[80px] max-sm:flex-col max-sm:w-[95%]">

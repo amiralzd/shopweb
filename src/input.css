@@ -268,6 +268,24 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 
+.dropdownSH{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.title{
+  transition: .5s all ease;
+}
+
+.title:hover{
+  color: #CC0D39;
+}
+
+.title li:hover{
+  color: #CC0D39;
+}
+
+
 
 
 
@@ -409,3 +427,6 @@ input[type=range]::-ms-thumb {
 	background: #a1d0ff;
 	cursor: pointer;
 }
+
+
+
