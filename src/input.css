@@ -9,11 +9,19 @@
 }
 
 
+@font-face {
+  font-family: woff;
+  src: url('../assets/fonts/IRANSans.eot') format('eot'),
+  url('../assets/fonts/IRANSans.woff') format('woff'),
+  url('../assets/fonts/IRANSans.woff2') format('woff2');
+}
+
+
 #body{
   scrollbar-color: rgba(223, 223, 223, 0.9) rgba(255, 255, 255, 0);
   scrollbar-width: thin;
-
   background-color: #fffaf4;
+  font-family: woff;
 }
 
 
